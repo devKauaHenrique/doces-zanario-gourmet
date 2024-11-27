@@ -739,10 +739,6 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -850,8 +846,8 @@ video {
   max-height: 5rem;
 }
 
-.w-48 {
-  width: 12rem;
+.w-44 {
+  width: 11rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -936,6 +932,20 @@ video {
 
 .transform-none {
   transform: none;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
+.animate-\[wiggle_3\.5s_infinite\] {
+  animation: wiggle 3.5s infinite;
 }
 
 .touch-auto {
@@ -1728,6 +1738,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1866,6 +1880,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-verde {
+  --tw-border-opacity: 1;
+  border-color: rgb(152 197 174 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -2136,8 +2155,12 @@ video {
   vertical-align: super;
 }
 
-.font-poppins {
-  font-family: Poppins, sans-serif;
+.font-della-respira {
+  font-family: Della Respira, sans-serif;
+}
+
+.font-satisfy {
+  font-family: Satisfy, sans-serif;
 }
 
 .text-2xl {
@@ -2153,6 +2176,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-base {
@@ -2252,6 +2280,11 @@ video {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-bege {
+  --tw-text-opacity: 1;
+  color: rgb(251 247 238 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -2648,6 +2681,10 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2689,6 +2726,16 @@ html{
   border-color: rgb(205 129 149 / var(--tw-border-opacity));
 }
 
+.hover\:border-verde-escuro:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(103 145 123 / var(--tw-border-opacity));
+}
+
+.hover\:border-verde:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(152 197 174 / var(--tw-border-opacity));
+}
+
 .hover\:bg-rosa:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(205 129 149 / var(--tw-bg-opacity));
@@ -2702,6 +2749,11 @@ html{
 .hover\:bg-verde-escuro:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(103 145 123 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-verde:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(152 197 174 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
@@ -2757,10 +2809,6 @@ html{
     max-width: 42rem;
   }
 
-  .md\:max-w-xl {
-    max-width: 36rem;
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2789,9 +2837,22 @@ html{
     gap: 0.75rem;
   }
 
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:py-2 {
@@ -2799,14 +2860,19 @@ html{
     padding-bottom: 0.5rem;
   }
 
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl {
@@ -2823,6 +2889,11 @@ html{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2830,14 +2901,19 @@ html{
     flex-direction: row;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
@@ -2848,3 +2924,4 @@ html{
     }
   }
 }
+
