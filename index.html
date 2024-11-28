@@ -14,14 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet" />
 
     <!--TAGS ICONS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/output.css">
     <link rel="stylesheet" href="styles/slides.css">
     <link rel="stylesheet" href="styles/cards.css">
-    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
 
     <title>Zanario Gourmet</title>
 </head>
@@ -42,20 +41,23 @@
 
         <section class="w-full h-screen-minus-header-1 md:h-screen-minus-header-2 flex items-center">
             <div class="w-full h-full flex flex-col gap-2 items-center justify-center px-8">
-                <img src="assets/logo-zanario-gourmet.png" class="w-44 h-44 md:w-60 md:h-60 rounded-full animate-[wiggle_3.5s_infinite]"
-                    alt="Logo Zanario Gourmet">
-                <h1 class="text-bege text-center font-semibold font-satisfy md:w-1/2 text-xl md:text-3xl">Bem vindos ao
+                <img src="assets/logo-zanario-gourmet.png"
+                    class="w-44 h-44 md:w-60 md:h-60 rounded-full"
+                    alt="Logo Zanario Gourmet" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+                <h1 class="text-bege text-center font-semibold font-satisfy md:w-1/2 text-xl md:text-3xl" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Bem vindos ao
                     Zanario Gourmet</h1>
-                <h1 class="text-bege text-center font-semibold font-satisfy md:w-1/2 text-xl md:text-3xl">Nossos doces
+                <h1 class="text-bege text-center font-semibold font-satisfy md:w-1/2 text-xl md:text-3xl" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Nossos doces
                     são momentos de felicidade eternizados em cada mordida.</h1>
                 <div class="flex items-center gap-3 md:gap-4">
-                    <a href="#quem-somos" class="mt-2 md:mt-4">
+                    <a href="#quem-somos" class="mt-2 md:mt-4" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                         <span
-                            class="px-2 md:px-4 py-1 rounded-2xl border-2 text-bege text-lg md:text-xl font-della-respira font-semibold bg-verde border-verde hover:border-verde-escuro hover:bg-verde-escuro transition duration-700 ease-in-out">Conheça mais</span>
+                            class="px-2 md:px-4 py-1 rounded-2xl border-2 text-bege text-lg md:text-xl font-della-respira font-semibold bg-verde border-verde hover:border-verde-escuro hover:bg-verde-escuro transition duration-700 ease-in-out">Conheça
+                            mais</span>
                     </a>
-                    <a href="#section-cardapio" class="mt-2 md:mt-4">
+                    <a href="#section-cardapio" class="mt-2 md:mt-4" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                         <span
-                            class="px-2 md:px-4 py-1 rounded-2xl border-2 text-bege text-lg md:text-xl font-della-respira font-semibold bg-verde border-verde hover:border-verde-escuro hover:bg-verde-escuro transition duration-700 ease-in-out">Nosso cardápio</span>
+                            class="px-2 md:px-4 py-1 rounded-2xl border-2 text-bege text-lg md:text-xl font-della-respira font-semibold bg-verde border-verde hover:border-verde-escuro hover:bg-verde-escuro transition duration-700 ease-in-out">Nosso
+                            cardápio</span>
                     </a>
                 </div>
             </div>
@@ -72,56 +74,69 @@
     </main>
 
     <section class="w-full h-full flex flex-col items-center py-8" id="quem-somos">
-        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy">Quem somos</h1>
-        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2">Conheça o Zanario Gourmet</h2>
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy" data-aos="fade-down-right" data-aos-delay="600" data-aos-duration="1000">Quem somos</h1>
+        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2" data-aos="fade-down-right" data-aos-delay="600" data-aos-duration="1000">Conheça o Zanario Gourmet</h2>
         <div class="mt-2 px-6 flex flex-col lg:flex-row items-center gap-4 md:gap-10">
-            <div class="text-center text-base flex flex-col gap-2 items-center">
-                <p class="max-w-md md:max-w-2xl font-medium">Bem-vindo ao Zanario Gourmet, onde cada doce é uma obra-prima feita com
+            <div class="text-center text-base flex flex-col gap-2 items-center" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000">
+                <p class="max-w-md md:max-w-2xl font-medium">Bem-vindo ao Zanario Gourmet, onde cada doce é uma
+                    obra-prima feita com
                     paixão! Nossa confeitaria nasceu do amor pelos doces e do desejo de transformar momentos simples em
                     experiências memoráveis.</p>
-                <p class="max-w-md md:max-w-2xl font-medium">Fundado por Gabriela e Roseane Zanario, o Zanario Gourmet é um espaço
+                <p class="max-w-md md:max-w-2xl font-medium">Fundado por Gabriela e Roseane Zanario, o Zanario Gourmet é
+                    um espaço
                     onde a tradição se encontra com a inovação. Usamos apenas ingredientes frescos e de alta qualidade,
                     garantindo que cada receita reflita o nosso compromisso com o sabor e a apresentação.</p>
-                <p class="max-w-md md:max-w-2xl font-medium">Aqui, acreditamos que cada doce conta uma história. Nossos produtos são
+                <p class="max-w-md md:max-w-2xl font-medium">Aqui, acreditamos que cada doce conta uma história. Nossos
+                    produtos são
                     elaborados com cuidado, para trazer não apenas um paladar delicioso, mas também um visual
                     irresistível. Desde a primeira mordida até o último pedaço, buscamos proporcionar a você e sua
                     família uma experiência única e deliciosa.</p>
-                <p class="max-w-md md:max-w-2xl font-medium">Além disso, o Zanario Gourmet se orgulha de ser uma parte ativa da
+                <p class="max-w-md md:max-w-2xl font-medium">Além disso, o Zanario Gourmet se orgulha de ser uma parte
+                    ativa da
                     nossa comunidade. Estamos sempre buscando maneiras de colaborar e compartilhar a doçura com todos ao
                     nosso redor.</p>
-                <span class="font-semibold font-della-respira text-lg text-rosa max-w-md md:max-w-2xl text-center">Descubra o sabor da
+                <span
+                    class="font-semibold font-della-respira text-lg text-rosa max-w-md md:max-w-2xl text-center">Descubra
+                    o sabor da
                     verdadeira confeitaria! Estamos ansiosos para adoçar seu dia!</span>
-            </div>
-            <div class="hidden md:flex">
+            </div> 
+            <div class="hidden md:flex" data-aos="flip-left" data-aos-delay="800" data-aos-duration="1500">
                 <img class="rounded-md max-w-72" src="/assets/doces-quem-somos.jpg" alt="Doces">
             </div>
         </div>
     </section>
 
     <section class="w-full h-full flex flex-col items-center py-8">
-        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center">Porque escolher o <span class="text-verde">Zanario Gourmet</span> ?</h1> 
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center" data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1000">Porque escolher o <span
+                class="text-verde">Zanario Gourmet</span> ?</h1>
         <div class="cartoes">
-            <div class="cartao">
+            <div class="cartao" data-aos="fade-down-right" data-aos-delay="400" data-aos-duration="1000">
                 <h1 class="number">01</h1>
                 <h2 class="title font-satisfy">Doçura que Encanta e Surpreende</h2>
-                <span class="text">Deleite-se com combinações inusitadas e sabores surpreendentes! No Zanario Gourmet, nos dedicamos a criar doces que não só conquistam pelo sabor, mas também pela estética, elevando a sua experiência a um novo nível de prazer.</span>
-            </div>
-            <div class="cartao">
+                <span class="text">Deleite-se com combinações inusitadas e sabores surpreendentes! No Zanario Gourmet,
+                    nos dedicamos a criar doces que não só conquistam pelo sabor, mas também pela estética, elevando a
+                    sua experiência a um novo nível de prazer.</span>
+            </div> 
+            <div class="cartao" data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1000">
                 <h1 class="number">02</h1>
                 <h2 class="title font-satisfy">Variedade para Todos os Gostos</h2>
-                <span class="text">De trufas e brownies a tortas e doces finos, o Zanario Gourmet oferece uma ampla variedade de opções para agradar a todos os paladares. Seja para uma ocasião especial ou para o dia a dia, temos o doce perfeito para você!</span>
+                <span class="text">De trufas e brownies a tortas e doces finos, o Zanario Gourmet oferece uma ampla
+                    variedade de opções para agradar a todos os paladares. Seja para uma ocasião especial ou para o dia
+                    a dia, temos o doce perfeito para você!</span>
             </div>
-            <div class="cartao">
+            <div class="cartao" data-aos="fade-down-right" data-aos-delay="600" data-aos-duration="1000">
                 <h1 class="number">03</h1>
                 <h2 class="title font-satisfy">Perfeito para Presentear e Celebrar</h2>
-                <span class="text">Seja para um presente sofisticado ou para celebrar momentos especiais, os doces do Zanario Gourmet são a escolha ideal. Elegantes, deliciosos e embalados com carinho, são a forma perfeita de mostrar afeto e transformar qualquer ocasião em algo inesquecível.</span>
+                <span class="text">Seja para um presente sofisticado ou para celebrar momentos especiais, os doces do
+                    Zanario Gourmet são a escolha ideal. Elegantes, deliciosos e embalados com carinho, são a forma
+                    perfeita de mostrar afeto e transformar qualquer ocasião em algo inesquecível.</span>
             </div>
         </div>
     </section>
 
     <section class="w-full h-full flex flex-col items-center py-6">
-        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy">Produtos</h1>
-        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2">Conheça nossas delícias</h2>
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy" data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1000">Produtos</h1>
+        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2" data-aos="fade-down-left" data-aos-delay="500" data-aos-duration="1000">Conheça nossas delícias</h2>
 
         <div class="slider mb-4">
             <div class="slider-content">
@@ -161,7 +176,7 @@
         <div class="cards-container">
             <div class="card-content">
                 <div class="card-wrapper">
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="2000">
                         <div class="image-content">
                             <div class="card-image">
                                 <img src="/assets/bolo-produtos.jpg" alt="Bolo" class="card-img">
@@ -181,7 +196,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-delay="400" data-aos-duration="2000">
                         <div class="image-content">
                             <div class="card-image">
                                 <img src="/assets/brigadeiro-produtos.jpg" alt="Brigadeiros" class="card-img">
@@ -201,7 +216,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="flip-left" data-aos-delay="500" data-aos-duration="2000">
                         <div class="image-content">
                             <div class="card-image">
                                 <img src="/assets/doces-finos.jpg" alt="Doces Finos" class="card-img">
@@ -223,7 +238,7 @@
                 </div>
 
                 <div class="card-wrapper-2">
-                    <div class="card">
+                    <div class="card" data-aos="flip-right" data-aos-delay="300" data-aos-duration="2000">
                         <div class="image-content">
                             <div class="card-image">
                                 <img src="/assets/brownie-produtos.jpg" alt="Brownie" class="card-img">
@@ -243,7 +258,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="flip-right" data-aos-delay="400" data-aos-duration="2000">
                         <div class="image-content">
                             <div class="card-image">
                                 <img src="/assets/bolo-de-pote.jpeg" alt="Bolo de Pote" class="card-img">
@@ -263,7 +278,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="flip-right" data-aos-delay="500" data-aos-duration="2000">
                         <div class="image-content">
                             <div class="card-image">
                                 <img src="/assets/trufas-produtos.png" alt="Trufas" class="card-img">
@@ -288,10 +303,10 @@
     </section>
 
     <section class="w-full h-full flex flex-col items-center py-8" id="section-cardapio">
-        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center">Nosso cardápio !</h1> 
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center" data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1000">Nosso cardápio !</h1>
         <div class="cardapio">
             <div class="linha">
-                <div class="produto">
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/doces-finos.jpg" alt="Doces Finos" class="card-img-produto">
@@ -308,7 +323,7 @@
                     </div>
                 </div>
 
-                <div class="produto">
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/bolo-de-pote.jpeg" alt="Bolo de Pote" class="card-img-produto">
@@ -325,7 +340,7 @@
                     </div>
                 </div>
 
-                <div class="produto">
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="400" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/bolo-produtos.jpg" alt="Bolos" class="card-img-produto">
@@ -344,7 +359,7 @@
             </div>
 
             <div class="linha">
-                <div class="produto">
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/brigadeiro-produtos.jpg" alt="Brigadeiros" class="card-img-produto">
@@ -361,7 +376,7 @@
                     </div>
                 </div>
 
-                <div class="produto">
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/brownie-produtos.jpg" alt="Brownie" class="card-img-produto">
@@ -378,7 +393,7 @@
                     </div>
                 </div>
 
-                <div class="produto">
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="400" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/trufas-produtos.png" alt="Trufas" class="card-img-produto">
@@ -398,7 +413,7 @@
             </div>
 
             <div class="linha">
-                <div class="produto">
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/doces-finos.jpg" alt="Doces Finos" class="card-img-produto">
@@ -415,7 +430,7 @@
                     </div>
                 </div>
 
-                <div class="produto">
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/doces-finos.jpg" alt="Doces Finos" class="card-img-produto">
@@ -431,8 +446,8 @@
                         </h2>
                     </div>
                 </div>
-                
-                <div class="produto">
+
+                <div class="produto" data-aos="zoom-in-right" data-aos-delay="400" data-aos-duration="1000">
                     <div class="image-content-produto">
                         <div class="card-image-produto">
                             <img src="/assets/doces-finos.jpg" alt="Doces Finos" class="card-img-produto">
@@ -453,8 +468,8 @@
     </section>
 
     <section class="w-full h-full flex flex-col items-center py-8">
-        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center">Nossa galeria</h1> 
-        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2">Algumas fotos do Zanario Gourmet</h2>
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center" data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1000">Nossa galeria</h1>
+        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2" data-aos="fade-down-right" data-aos-delay="600" data-aos-duration="1000">Algumas fotos do Zanario Gourmet</h2>
 
         <div class="galeria">
             <div class="linha-galeria">
@@ -499,12 +514,13 @@
                 </div>
                 <div class="img-galeria">
                     <img src="/assets/foto-feed-13.jpg" alt="Fotos Galeria">
-                </div><div class="img-galeria">
+                </div>
+                <div class="img-galeria">
                     <img src="/assets/foto-feed-14.jpg" alt="Fotos Galeria">
                 </div>
             </div>
-        </div> 
-        
+        </div>
+
     </section>
 
     <div id="back-to-top" onclick="scrollToTop()" class="scrollTop">
@@ -522,12 +538,14 @@
     <footer class="w-full h-full bg-rosa flex justify-center md:items-center py-12 px-8">
         <div class="flex flex-col md:flex-row gap-6 md:gap-16">
             <div class="flex flex-col text-center gap-4">
-                <h2 class="font-bold text-3xl font-satisfy text-white"> <i class="fa-solid fa-location-dot text-white text-4xl md:text-2xl"></i> Onde estamos</h2>
+                <h2 class="font-bold text-3xl font-satisfy text-white"> <i
+                        class="fa-solid fa-location-dot text-white text-4xl md:text-2xl"></i> Onde estamos</h2>
                 <span class="text-white text-xl md:text-base font-medium">Suzano-SP</span>
                 <span class="text-white text-xl md:text-base font-medium">Av. Brasília, 1233</span>
             </div>
             <div class="flex flex-col items-center text-center gap-4">
-                <h2 class="font-bold text-3xl font-satisfy text-white"> <i class="fa-solid fa-phone text-4xl md:text-2xl"></i> Entre em contato</h2>
+                <h2 class="font-bold text-3xl font-satisfy text-white"> <i
+                        class="fa-solid fa-phone text-4xl md:text-2xl"></i> Entre em contato</h2>
                 <div class="flex items-center gap-3 md:gap-2">
                     <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
                     <a class="text-white text-xl md:text-base"
@@ -542,7 +560,8 @@
                 </div>
             </div>
             <div class="flex flex-col text-center items-center gap-4">
-                <h2 class="font-bold text-3xl font-satisfy text-white"> <i class="fa-solid fa-hashtag text-4xl md:text-2xl"></i> Redes sociais</h2>
+                <h2 class="font-bold text-3xl font-satisfy text-white"> <i
+                        class="fa-solid fa-hashtag text-4xl md:text-2xl"></i> Redes sociais</h2>
                 <div class="flex flex-row gap-4">
                     <a href="https://www.instagram.com/zanario_gourmet_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                         target="_blank">
@@ -562,6 +581,10 @@
         <span class="text-white text-xl md:text-lg font-della-respira">&copy; Todos os direitos reservados </span>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="/scripts/scripts.js"></script>
     <script src="/scripts/slides.js"></script>
 </body>

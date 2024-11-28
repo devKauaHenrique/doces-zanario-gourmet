@@ -25,12 +25,6 @@ module.exports = {
       'satisfy': ['Satisfy', 'sans-serif'],
       'della-respira': ['Della Respira', 'sans-serif'],
     },
-    keyframes:{
-      wiggle:{
-        '0%, 100%':{transform: 'translateY(0) scale(1)'},
-        '50%': {transform: 'translateY(-8px) scale(1.1)'},
-      },
-    }
   },
   plugins: [],
 }
