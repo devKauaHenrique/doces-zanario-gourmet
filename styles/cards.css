@@ -206,6 +206,8 @@ section.encomenda {
     color: #808080;
     font-weight: 500;
     font-style: italic;
+    display: flex;
+    flex-direction: column;
 }
 
 .price{
@@ -228,4 +230,61 @@ section.encomenda {
         gap: 1rem;
         padding: 10px 15px;
     }
+}
+
+.galeria{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 10px;
+}
+
+.linha-galeria{
+    display: flex;
+    gap: 6px;
+}
+
+.img-galeria{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.img-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s;
+}
+
+.img-galeria img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+@media screen and (max-width: 748px){
+    .linha-galeria{
+        flex-direction: column;
+    }
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #98C5AE;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    z-index: 99;
+}
+
+.scrollTop:hover{
+    background-color: #67917b;
 }
