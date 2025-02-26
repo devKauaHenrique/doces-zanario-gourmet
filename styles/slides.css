@@ -64,6 +64,10 @@
     background-color: #CD8195;
 }
 
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: #CD8195;
+}
+
 #radio1:checked ~.primeiro{
     margin-left: 0%;
 }
@@ -74,6 +78,10 @@
 
 #radio3:checked ~.primeiro{
     margin-left: -50%;
+}
+
+#radio4:checked ~.primeiro{
+    margin-left: -75%;
 }
 
 @media screen and (max-width: 900px){
