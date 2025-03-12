@@ -12,8 +12,8 @@ module.exports = {
       },
     },
     backgroundImage: {
-      'home': "url(/assets/home.jpg)",
-      'fundo-bolo': "url(/assets/fundo-bolo.png"
+      'home': "url(/assets/home.webp)",
+      'fundo-bolo': "url(/assets/fundo-bolo.webp"
     },
     height: {
       'screen-minus-header-1': 'calc(100vh - 3rem)',
