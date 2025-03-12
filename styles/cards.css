@@ -177,15 +177,14 @@ section.encomenda {
 
 .cardapio{
     display: flex;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .img-cardapio{
     display: flex;
     gap: 1.5rem;
-    background-color: white;
     width: 100%;
-    height: 550px;
+    height: 500px;
 }
 
 .img-cardapio img{
@@ -202,7 +201,7 @@ section.encomenda {
 
 @media screen and (max-width: 748px){
     .cardapio{
-        padding: 20px 20px;
+        padding: 20px 24px;
     }
 
     .img-cardapio{
@@ -211,7 +210,7 @@ section.encomenda {
         gap: 1rem;
         background-color: white;
         width: 100%;
-        height: 300px;
+        height: auto;
     }
 }
 
