@@ -866,12 +866,12 @@ video {
   width: 100%;
 }
 
-.max-w-72 {
-  max-width: 18rem;
-}
-
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-72 {
+  max-width: 18rem;
 }
 
 .flex-shrink {
@@ -2681,6 +2681,11 @@ body{
   font-family: "Montserrat", sans-serif;
 }
 
+.foto-rose img{
+  border-radius: 2rem;
+  border: 2px solid red;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2797,10 +2802,6 @@ body{
 
   .md\:max-w-2xl {
     max-width: 42rem;
-  }
-
-  .md\:max-w-xl {
-    max-width: 36rem;
   }
 
   .md\:flex-row {
