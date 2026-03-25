@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site do Zanario Gourmet, uma incrível confeitaria de doces delicíosos!!">
+    <meta name="keywords" content="Zanario Gourmet, web-site, doces, confeitaria, doceria">
+    <meta name="author" content="Kauã Henrique">
+
+    <!-- TAGS OGs -->
+    <meta property="og:title" content="Zanario Gourmet - Doces deliciosos e encantadores">
+    <meta property="og:description" content="Venha conhecer mais sobre essa confeitaria que faz doces deliciosos com muito amor e carinho especialmente para você, amante de doces!!">
+    <meta property="og:image" content="https://zanario-gourmet.vercel.app/assets/logo-zanario-gourmet.png">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet" />
+
+    <!--TAGS ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/zanario-gourmet.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/slides.css">
+    <link rel="stylesheet" href="styles/cards.css">
+
+    <title>Zanario Gourmet</title>
+</head>
+
+<body class="bg-bege">
+    <main class="w-full h-screen bg-home bg-cover bg-center">
+        <header class="bg-rosa max-h-20">
+            <nav class="w-full md:px-24 px-6 py-6 md:py-6 flex justify-center md:justify-between items-center">
+                <div class="hidden md:flex items-center">
+                    <span class="text-bege font-semibold font-satisfy text-xl md:text-3xl">Zanario Gourmet</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-bege font-semibold font-satisfy text-2xl md:text-3xl">Doces finos | Sobremesas |
+                        Bolos</span>
+                </div>
+            </nav>
+        </header>
+
+        <section class="w-full h-screen-minus-header-1 md:h-screen-minus-header-2 flex items-center">
+            <div class="w-full h-full flex flex-col gap-2 items-center justify-center px-8">
+                <img src="assets/logo-zanario-gourmet.png" srcset="assets/logo-zanario-gourmet.webp" type="image/webp" class="w-44 h-44 md:w-56 md:h-56 rounded-full"
+                    alt="Logo Zanario Gourmet">
+                <h1 class="text-bege text-center font-semibold font-satisfy md:w-1/2 text-xl md:text-2xl">Bem vindos ao
+                    Zanario Gourmet</h1>
+                <h1 class="text-bege text-center font-semibold font-satisfy md:w-2/3 text-xl md:text-2xl">Nossos doces
+                    são momentos de felicidade eternizados em cada mordida.</h1>
+                <div class="flex items-center gap-3 md:gap-4">
+                    <a href="#quem-somos" class="mt-2 md:mt-4">
+                        <span class="px-2 md:px-4 py-1 rounded-2xl border-2 text-bege text-lg md:text-xl font-della-respira font-semibold bg-verde border-verde hover:border-verde-escuro hover:bg-verde-escuro transition duration-700 ease-in-out">Conheça mais</span>
+                    </a>
+                    <a href="#section-cardapio" class="mt-2 md:mt-4">
+                        <span
+                            class="px-2 md:px-4 py-1 rounded-2xl border-2 text-bege text-lg md:text-xl font-della-respira font-semibold bg-verde border-verde hover:border-verde-escuro hover:bg-verde-escuro transition duration-700 ease-in-out">Nosso
+                            cardápio</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottom-5 right-8 absolute z-50">
+                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                    target="_blank"
+                    class="bg-rosa hover:bg-rosa-escuro font-della-respira text-white rounded-2xl px-4 py-1 md:py-1 md:px-4 flex items-center gap-2 md:gap-3 font-semibold transition duration-700 ease-in-out">
+                    <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i>
+                    <span class="md:text-xl">Faça seu pedido</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <section class="w-full h-full flex flex-col items-center py-8" id="quem-somos">
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy">Quem somos</h1>
+        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2">Conheça o Zanario Gourmet</h2>
+        <div class="mt-2 px-6 flex flex-col lg:flex-row items-center gap-4 md:gap-10">
+            <div class="text-center text-base flex flex-col gap-2 items-center">
+                <p class="max-w-md md:max-w-2xl font-medium">Bem-vindo(a) ao Zanario Gourmet, onde cada doce é uma
+                    obra-prima feita com
+                    paixão! Nossa confeitaria nasceu do amor pelos doces e do desejo de transformar momentos simples em
+                    experiências memoráveis.</p>
+                <p class="max-w-md md:max-w-2xl font-medium">Fundado por Gabriela e Roseane Zanario, o Zanario Gourmet é
+                    um espaço
+                    onde a tradição se encontra com a inovação. Usamos apenas ingredientes frescos e de alta qualidade,
+                    garantindo que cada receita reflita o nosso compromisso com o sabor e a apresentação.</p>
+                <p class="max-w-md md:max-w-2xl font-medium">Aqui, acreditamos que cada doce conta uma história. Nossos
+                    produtos são
+                    elaborados com cuidado, para trazer não apenas um paladar delicioso, mas também um visual
+                    irresistível. Desde a primeira mordida até o último pedaço, buscamos proporcionar a você e sua
+                    família uma experiência única e deliciosa.</p>
+                <p class="max-w-md md:max-w-2xl font-medium">Além disso, o Zanario Gourmet se orgulha de ser uma parte
+                    ativa da
+                    nossa comunidade. Estamos sempre buscando maneiras de colaborar e compartilhar a doçura com todos ao
+                    nosso redor.</p>
+                <span
+                    class="font-semibold font-della-respira text-lg text-rosa max-w-md md:max-w-2xl text-center">Descubra
+                    o sabor da
+                    verdadeira confeitaria! Estamos ansiosos para adoçar seu dia!</span>
+            </div>
+            <div class="hidden md:flex">
+                <img class="rounded-md max-w-72" src="/assets/doces-quem-somos.jpg" srcset="assets/doces-quem-somos.webp" type="image/webp" alt="Doces">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-full flex flex-col items-center py-8">
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center">Porque escolher o <span class="text-verde">Zanario
+                Gourmet</span> ?</h1>
+        <div class="cartoes">
+            <div class="cartao">
+                <h1 class="number">01</h1>
+                <h2 class="title font-satisfy">Doçura que Encanta e Surpreende</h2>
+                <span class="text">Deleite-se com combinações inusitadas e sabores surpreendentes! No Zanario Gourmet,
+                    nos dedicamos a criar doces que não só conquistam pelo sabor, mas também pela estética, elevando a
+                    sua experiência a um novo nível de prazer.</span>
+            </div>
+            <div class="cartao">
+                <h1 class="number">02</h1>
+                <h2 class="title font-satisfy">Variedade para Todos os Gostos</h2>
+                <span class="text">De trufas e brownies a tortas e doces finos, o Zanario Gourmet oferece uma ampla
+                    variedade de opções para agradar a todos os paladares. Seja para uma ocasião especial ou para o dia
+                    a dia, temos o doce perfeito para você!</span>
+            </div>
+            <div class="cartao">
+                <h1 class="number">03</h1>
+                <h2 class="title font-satisfy">Perfeito para Presentear e Celebrar</h2>
+                <span class="text">Seja para um presente sofisticado ou para celebrar momentos especiais, os doces do
+                    Zanario Gourmet são a escolha ideal. Elegantes, deliciosos e embalados com carinho, são a forma
+                    perfeita de mostrar afeto e transformar qualquer ocasião em algo inesquecível.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-full flex flex-col items-center py-6">
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy">Produtos</h1>
+        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2">Conheça nossas delícias</h2>
+
+        <div class="slider mb-4">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="/assets/banner-1.png" alt="Banner Doces">
+                    <img class="img-mobile" src="/assets/banner-mobile-1.png" alt="Banner Doces">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="/assets/banner-2.png" alt="Banner Doces">
+                    <img class="img-mobile" src="/assets/banner-mobile-2.png" alt="Banner Doces">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="/assets/banner-3.png" alt="Banner Doces">
+                    <img class="img-mobile" src="/assets/banner-mobile-3.png" alt="Banner Doces">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="/assets/banner-4.jpg" alt="Banner Doces">
+                    <img class="img-mobile" src="/assets/banner-mobile-4.png" alt="Banner Doces">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-container" id="cardapio">
+            <div class="card-content">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/doces/bolo-01.jpeg" srcset="/assets/doces/bolo-01.webp" type="image/webp" alt="Bolo" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Bolo</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/doces/docinhos01.jpeg" srcset="/assets/doces/docinhos01.webp" type="image/webp" alt="Brigadeiros" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Brigadeiros</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/doces-finos-2.jpeg" srcset="/assets/doces-finos-2.webp" type="image/webp" alt="Doces Finos" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Doces Finos</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrapper-2">
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/brownie-produtos.jpg" srcset="/assets/brownie-produtos.webp" type="image/webp" alt="Brownie" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Brownie</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/doces/bolo-maracuja-01.jpeg" srcset="/assets/doces/bolo-maracuja-01.webp" type="image/webp" alt="Bolo de Pote" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Bolo de Pote</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/doces/trufas.jpeg" srcset="/assets/doces/trufas.webp" type="image/webp" alt="Trufas" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Trufas</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrapper-2">
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/doces/panetone-01.jpeg" srcset="/assets/doces/panetone-01.webp" type="image/webp" alt="Panetone" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Panetone Trufado</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/doces/ovo-pascoa-2.jpeg" srcset="/assets/doces/ovo-pascoa-2.webp" type="image/webp" alt="Ovo Trufado" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Ovo Trufado</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-content">
+                            <div class="card-image">
+                                <img src="/assets/doces/ovo-pascoa-1.jpeg" srcset="/assets/doces/ovo-pascoa-1.webp" type="image/webp" alt="Ovo de Páscoa" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h2 class="name font-satisfy">Ovo de Páscoa</h2>
+                            <button class="button">
+                                <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                                    target="_blank">Venha comprar</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="w-full h-full flex flex-col items-center py-4" id="section-cardapio">
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center">Cardápio de Páscoa !</h1>
+        <div class="cardapio">
+            <div class="img-cardapio">
+                <img src="assets/cardapio-pascoa-01.jpeg" srcset="/assets/cardapio-pascoa-01.webp" type="image/webp" alt="Cardápio de Páscoa">
+                <img src="assets/cardapio-pascoa-02.jpeg" srcset="/assets/cardapio-pascoa-02.webp" type="image/webp" alt="Cardápio de Páscoa">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-full flex flex-col items-center py-8">
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center">Nossa galeria</h1>
+        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2">Algumas fotos do Zanario Gourmet</h2>
+
+        <div class="galeria">
+            <div class="linha-galeria">
+                <div class="img-galeria">
+                    <img src="/assets/panetone.jpeg" srcset="/assets/panetone.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces-finos-zanario.jpeg" srcset="/assets/doces-finos-zanario.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/docinhos02.jpeg" srcset="/assets/doces/docinhos02.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces-finos-3.jpeg" srcset="/assets/doces-finos-3.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/bolo-maracuja-02.jpeg" srcset="/assets/doces/bolo-maracuja-02.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/doce-01.jpeg" srcset="/assets/doces/doce-01.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/docinhos01.jpeg" srcset="/assets/doces/docinhos01.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+            </div>
+
+            <div class="linha-galeria">
+                <div class="img-galeria">
+                    <img src="/assets/doces-finos-2.jpeg" srcset="/assets/doces-finos-2.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/ovo-pascoa-3.jpeg" srcset="/assets/doces/ovo-pascoa-3.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/bolo-01.jpeg" srcset="/assets/doces/bolo-01.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/cone-trufado-2.jpeg" srcset="/assets/doces/cone-trufado-2.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/docinhos03.jpeg" srcset="/assets/doces/docinhos03.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/ovo-trufado-03.jpeg" srcset="/assets/doces/ovo-trufado-03.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/doces/panetone-02.jpeg" srcset="/assets/doces/panetone-02.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="w-full h-full flex flex-col items-center py-8">
+        <h1 class="text-rosa text-5xl lg:text-6xl font-bold font-satisfy text-center">Feedbacks</h1>
+        <h2 class="text-verde text-2xl lg:text-3xl font-bold font-satisfy mt-2">O Zanario Gourmet é mais do que um doce, são experiências!</h2>
+
+        <div class="galeria">
+            <div class="linha-galeria">
+                <div class="img-galeria">
+                    <img src="/assets/feedback-1.jpeg" srcset="/assets/feedback-1.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/feedback-2.jpeg" srcset="/assets/feedback-2.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/feedback-3.jpeg" srcset="/assets/feedback-3.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/feedback-4.jpeg" srcset="/assets/feedback-4.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+            </div>
+
+            <div class="linha-galeria">
+                <div class="img-galeria">
+                    <img src="/assets/feedback-5.jpeg" srcset="/assets/feedback-5.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/feedback-6.jpeg" srcset="/assets/feedback-6.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/feedback-7.jpeg" srcset="/assets/feedback-7.webp" type="image/webp" alt="Fotos Galeria">
+                </div>
+                <div class="img-galeria">
+                    <img src="/assets/feedback-8.jpeg" srcset="/assets/feedback-8.webp" type="image/webp" alt="Fotos Galeria">
+                </div>          
+            </div>
+        </div>
+    </section> -->
+
+    <div id="back-to-top" onclick="scrollToTop()" class="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <section class="encomenda">
+        <h1 class="text-verde text-4xl lg:text-6xl font-bold font-satisfy">Faça sua encomenda</h1>
+        <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+            target="_blank"
+            class="mt-3 px-6 py-1 rounded-2xl border-2 text-white text-2xl md:text-3xl font-della-respira font-medium border-white hover:border-verde hover:bg-verde transition duration-700 ease-in-out">Peça
+            agora!</a>
+    </section>
+
+    <footer class="w-full h-full bg-rosa flex justify-center md:items-center py-12 px-8">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-16">
+            <div class="flex flex-col text-center gap-4">
+                <h2 class="font-bold text-3xl font-satisfy text-white"> <i
+                        class="fa-solid fa-location-dot text-white text-4xl md:text-2xl"></i> Onde estamos</h2>
+                <span class="text-white text-xl md:text-base font-medium">Suzano-SP</span>
+                <span class="text-white text-xl md:text-base font-medium">Av. Brasília, 1233</span>
+            </div>
+            <div class="flex flex-col items-center text-center gap-4">
+                <h2 class="font-bold text-3xl font-satisfy text-white"> <i
+                        class="fa-solid fa-phone text-4xl md:text-2xl"></i> Entre em contato</h2>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base"
+                        href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                        target="_blank">(11) 98847-7515</a>
+                </div>
+                <div class="flex items-center gap-3 md:gap-2">
+                    <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
+                    <a class="text-white text-xl md:text-base"
+                        href="https://www.instagram.com/zanario_gourmet_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">@zanario_gourmet_</a>
+                </div>
+            </div>
+            <div class="flex flex-col text-center items-center gap-4">
+                <h2 class="font-bold text-3xl font-satisfy text-white"> <i
+                        class="fa-solid fa-hashtag text-4xl md:text-2xl"></i> Redes sociais</h2>
+                <div class="flex flex-row gap-4">
+                    <a href="https://www.instagram.com/zanario_gourmet_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">
+                        <i
+                            class="fa-brands fa-instagram text-white text-3xl md:text-2xl bg-verde hover:bg-verde-escuro transition duration-700 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=551196329-1181&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
+                        target="_blank">
+                        <i
+                            class="fa-brands fa-whatsapp text-white text-3xl md:text-2xl bg-verde hover:bg-verde-escuro transition duration-700 ease-in-out rounded-full px-3 py-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-verde w-full h-full flex flex-col gap-1 justify-center items-center py-3">
+        <span class="text-white text-xl md:text-lg font-della-respira">&copy; Todos os direitos reservados </span>
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/slides.js"></script>
+</body>
+
+</html>
