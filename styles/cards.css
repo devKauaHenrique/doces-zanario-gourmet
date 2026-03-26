@@ -1,3 +1,12 @@
+.image-about img{
+    transition: all 0.6s ease;
+}
+
+.image-about img:hover{
+    box-shadow: 8px 8px 16px -3px rgba(205, 129, 149, 0.6);
+    transform: scale(1.05);
+}
+
 .cards-container {
     display: flex;
     align-items: center;
