@@ -13,7 +13,7 @@ module.exports = {
     },
     backgroundImage: {
       // 'home': "url(/assets/home.jpg)",
-      'fundo-bolo': "url(/assets/fundo-bolo.webp"
+      'fundo-bolo': "url(/assets/bolos-artesanais.jpg)"
     },
     height: {
       'screen-minus-header-1': 'calc(100vh - 2rem)',

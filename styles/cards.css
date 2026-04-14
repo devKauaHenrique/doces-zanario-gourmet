@@ -43,7 +43,7 @@
 
 .card:hover{
     box-shadow: 8px 8px 16px -3px rgba(205, 129, 149, 0.6);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .image-content, .content-card {
@@ -71,14 +71,9 @@
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #98C5AE;
+    border: 4px solid #FBF7EE;
 }
 
-.name {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-}
 
 .description {
     font-size: 16px;
@@ -90,9 +85,9 @@
 
 .button {
     font-size: 16px;
-    color: white;
+    color: #6c4a3b;
     padding: 8px 16px;
-    background-color: #98C5AE;
+    background-color: #FBF7EE;
     border-radius: 16px;
     margin: 10px 0px;
     cursor: pointer;
@@ -102,7 +97,7 @@
 }
 
 .button:hover {
-    background-color: #67917b;
+    box-shadow: 8px 8px 16px -3px rgba(108, 74, 59, 0.6);
 }
 
 section.encomenda {
@@ -138,43 +133,11 @@ section.encomenda {
     margin-top: 10px;
 }
 
-.cartao{
-    padding: 40px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    border-radius: 12px;
-    transition: all 0.6s ease;
-}
-
-.cartao:hover{
-    background-color: #CD8195;
-}
-
 .number{
     font-size: 26px;
     font-weight: bold;
     color: #CD8195;
     transition: all 0.4s ease;
-}
-
-.cartao:hover .number{
-    color: white;
-}
-
-.title{
-    font-size: 32px;
-    font-weight: bold;
-    color: #98C5AE;
-}
-
-.text{
-    color: #333;
-    transition: all 0.4s ease;
-}
-
-.cartao:hover .text{
-    color: white;
 }
 
 @media screen and (max-width: 748px){

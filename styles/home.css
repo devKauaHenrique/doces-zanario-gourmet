@@ -152,7 +152,7 @@ p.subtitle-produtos{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem;
+    padding: 2.5rem 5rem;
     border-radius: 1rem;
 }
 
@@ -230,14 +230,126 @@ p.subtitle-produtos{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0.4rem 0.8rem;
+    padding: 0.2rem 0.8rem;
     border-radius: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.5s ease;
+}
+
+.valor a i{
+    font-size: 1.7rem;
 }
 
 .valor a:hover {
     background: #ac586e;
     box-shadow: 8px 8px 16px -3px rgba(205, 129, 149, 0.6);
+}
+
+section.about h1{
+    color: #6c4a3b;
+    font-family: 'Della Respira', 'sans-serif';
+}
+
+section.about h2.title{
+    color: #6c4a3b;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Della Respira', 'sans-serif';
+}
+
+section.about span.text{
+    font-family: 'Montserrat', 'sans-serif';
+    color: #6c4a3b;
+}
+
+.cartoes{
+    display: flex;
+    gap: 4rem;
+    padding: 20px 40px;
+    max-width: 1800px;
+    margin-top: 10px;
+}
+
+.cartao{
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: 12px;
+    transition: all 0.8s ease;
+}
+
+.cartao:hover{
+    background-color: #CD8195;
+}
+
+.cartao:hover .number, .cartao:hover .title, .cartao:hover .text{
+    color: #FBF7EE;
+}
+
+section.my-products h1{
+    color: #6c4a3b;
+    font-family: 'Della Respira', 'sans-serif';
+}
+
+section.my-products h2{
+    font-family: 'Montserrat', 'sans-serif';
+    color: #6c4a3b;
+    margin-bottom: 1.3rem;
+}
+
+section.my-products .name {
+    font-size: 32px;
+    color: #FBF7EE;
+    font-family: 'Della Respira', 'sans-serif';
+}
+
+section.my-galery h1{
+    color: #6c4a3b;
+    font-family: 'Della Respira', 'sans-serif';
+}
+
+section.my-galery h2{
+    font-family: 'Montserrat', 'sans-serif';
+    color: #6c4a3b;
+    margin-bottom: 1.3rem;
+}
+
+section.encomenda h1{
+    color: #FBF7EE;
+    font-family: 'Della Respira', 'sans-serif'; 
+}
+
+section.encomenda a{
+    transition: all 0.8s ease;
+}
+
+section.encomenda a:hover{
+    background-color: #FBF7EE;
+    color: #6c4a3b;
+}
+
+footer h2{
+    color: #FBF7EE;
+    font-family: 'Della Respira', 'sans-serif'; 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer .redes-sociais i{
+    background-color: #FBF7EE;
+    color: #CD8195;
+    transition: all 0.8s ease;
+}
+
+footer .redes-sociais i:hover{
+    background-color: #ac586e;
+    color: #fff;
+}
+
+footer.fundo{
+    background-color: #FBF7EE;
+    color: #CD8195;
 }
