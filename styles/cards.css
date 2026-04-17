@@ -85,9 +85,9 @@
 
 .button {
     font-size: 16px;
-    color: #6c4a3b;
+    color: #FBF7EE;
     padding: 8px 16px;
-    background-color: #FBF7EE;
+    background-color: #98C5AE;
     border-radius: 16px;
     margin: 10px 0px;
     cursor: pointer;
@@ -97,7 +97,7 @@
 }
 
 .button:hover {
-    box-shadow: 8px 8px 16px -3px rgba(108, 74, 59, 0.6);
+    box-shadow: 8px 8px 16px -3px rgba(152, 197, 174, 0.6);
 }
 
 section.encomenda {

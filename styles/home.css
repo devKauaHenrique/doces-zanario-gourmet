@@ -1,5 +1,9 @@
+body{
+    background-color: #FDF9F8;
+}
+
 .hero{
-    background-color: #FBF7EE;
+    background-color: #98C5AE;
     font-family: 'Montserrat', 'sans-serif';
     padding: 4px;
     display: flex;
@@ -7,30 +11,59 @@
     font-size: 1rem;
     align-items: center;
     justify-content: center;
-    color: #CD8195;
+    color: #FBF7EE;
     width: 100%;
 }
 
-header nav span{
-    color: #FBF7EE;
-    font-family: 'Della Respira', 'sans-serif';
-}
-
-section.index{
-    background-image: url("/assets/home.jpg");
-    background-position: center;
-    background-size: cover;
-    padding: 6rem;
-}
-
-.left-content{
+.header {
+    width: 100%;
+    height: 90px;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-text span {
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'Della Respira', sans-serif;
+}
+
+.index {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.banner-image {
+    position: absolute;
+    inset: 0;
+    background: url("/assets/home.jpg") center/cover no-repeat;
+    z-index: -1;
+}
+
+.left-content {
+    max-width: 600px;
 }
 
 .left-content h1{
-    color: #6c4a3b;
+    color: #CD8195;
     font-family: 'Della Respira', 'sans-serif';
     font-weight: bold;
     font-size: 4.5rem;
@@ -39,7 +72,8 @@ section.index{
 }
 
 .left-content p{
-    color: #6c4a3b;
+    color: #98C5AE;
+    font-weight: bold;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 1.4rem;
     max-width: 400px;
@@ -62,20 +96,20 @@ section.index{
 
 .buttons a.btn-1{
     color: #FBF7EE;
-    background-color: #CD8195;
+    background-color: #98C5AE;
 }
 
 .buttons a.btn-2{
     background-color: #FBF7EE;
-    color: #CD8195;
+    color: #98C5AE;
 }
 
 .buttons a:hover{
-    box-shadow: 8px 8px 16px -3px rgba(205, 129, 149, 0.6);
+    box-shadow: 8px 8px 16px -3px rgba(152, 197, 174, 0.6);
 }
 
 section.subhero{
-    background-color: #FBF7EE;
+    background-color: #98C5AE;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -83,14 +117,14 @@ section.subhero{
 }
 
 .elements{
-    color: #6c4a3b;
+    color: #FDF9F8;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
 .elements i{
-    color: #CD8195;
+    color: #FDF9F8;
     font-size: 2rem;
 }
 
@@ -99,14 +133,15 @@ section.subhero{
 }
 
 h1.text-produtos{
-    color: #6c4a3b;
+    color: #CD8195;
     font-family: 'Della Respira', 'sans-serif';
     font-weight: bold;
     font-size: 3rem;
 }
 
 p.subtitle-produtos{
-    color: #6c4a3b;
+    color: #98C5AE;
+    font-weight: bold;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 1.2rem;
 }
@@ -141,7 +176,7 @@ p.subtitle-produtos{
 
 .product p{
     text-align: center;
-    color: #6c4a3b;
+    color: #CD8195;
     font-weight: bold;
     padding: 1rem;
 }
@@ -199,20 +234,21 @@ p.subtitle-produtos{
     font-weight: bold;
     font-size: 1.5rem;
     font-family: 'Della Respira', 'sans-serif';
-    color: #6c4a3b;
+    color: #CD8195;
     padding: 0.8rem 1rem 0.2rem;
 }
 
 .produto p {
     font-size: 0.9rem;
     font-family: 'Montserrat', 'sans-serif';
-    color: #6c4a3b;
+    color: #98C5AE;
     padding: 0 1rem;
 }
 
 .valor {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
     align-items: center;
     padding: 1rem 1rem 1rem 0;
 }
@@ -247,12 +283,12 @@ p.subtitle-produtos{
 }
 
 section.about h1{
-    color: #6c4a3b;
+    color: #CD8195;
     font-family: 'Della Respira', 'sans-serif';
 }
 
 section.about h2.title{
-    color: #6c4a3b;
+    color: #CD8195;
     font-size: 32px;
     font-weight: bold;
     font-family: 'Della Respira', 'sans-serif';
@@ -260,7 +296,82 @@ section.about h2.title{
 
 section.about span.text{
     font-family: 'Montserrat', 'sans-serif';
+    color: #98C5AE;
+}
+
+section.about-us h1{
+    color: #CD8195;
+    font-family: 'Della Respira', 'sans-serif';
+    font-weight: bold;  
+    font-size: 3.8rem;
+}
+
+section.about-us h2{
+    color: #98C5AE;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.about-us {
+    padding: 4rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.informacoes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.informacoes h2 {
+    font-size: 2rem;
+    color: #CD8195;
+    font-family: 'Della Respira', 'sans-serif';
+}
+
+.informacoes p {
+    font-size: 0.95rem;
+    line-height: 1.6;
     color: #6c4a3b;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-image h2.text-hello{
+    font-family: 'Della Respira', 'sans-serif';
+    font-weight: bold;
+    font-size: 2rem;
+    z-index: 2;
+    color: #CD8195;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
 }
 
 .cartoes{
@@ -289,14 +400,15 @@ section.about span.text{
 }
 
 section.my-products h1{
-    color: #6c4a3b;
+    color: #CD8195;
     font-family: 'Della Respira', 'sans-serif';
 }
 
 section.my-products h2{
     font-family: 'Montserrat', 'sans-serif';
-    color: #6c4a3b;
+    color: #98C5AE;
     margin-bottom: 1.3rem;
+    font-weight: bold;
 }
 
 section.my-products .name {
@@ -306,14 +418,15 @@ section.my-products .name {
 }
 
 section.my-galery h1{
-    color: #6c4a3b;
+    color: #CD8195;
     font-family: 'Della Respira', 'sans-serif';
 }
 
 section.my-galery h2{
     font-family: 'Montserrat', 'sans-serif';
-    color: #6c4a3b;
+    color: #98C5AE;
     margin-bottom: 1.3rem;
+    font-weight: bold;
 }
 
 section.encomenda h1{
@@ -326,8 +439,8 @@ section.encomenda a{
 }
 
 section.encomenda a:hover{
-    background-color: #FBF7EE;
-    color: #6c4a3b;
+    background-color: #98C5AE;
+    color: #FBF7EE;
 }
 
 footer h2{
@@ -345,11 +458,146 @@ footer .redes-sociais i{
 }
 
 footer .redes-sociais i:hover{
-    background-color: #ac586e;
+    background-color: #98C5AE;
     color: #fff;
 }
 
 footer.fundo{
     background-color: #FBF7EE;
     color: #CD8195;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .hero {
+        font-size: 1rem;
+        padding: 4px;
+        text-align: center;
+    }
+
+    .hero p{
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .index {
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .banner-image {
+        background: url("/assets/home.jpg") no-repeat;
+        background-size: cover;    
+        background-position: 80% center;     
+        position: relative;
+        width: 100%;
+        height: 100vh; 
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-content {
+        padding: 2rem 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .left-content h1 {
+        font-size: 2rem;
+    }
+
+    .left-content p {
+        font-size: 1rem;
+    }
+
+    .nav-text span {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        flex-direction: row;
+    }
+
+    .buttons a {
+        width: auto; 
+        padding: 0.6rem 1rem; 
+        font-size: 0.85rem;
+        white-space: nowrap; 
+    }
+
+    section.subhero {
+        display: none;
+    }
+
+    .products-list {
+        gap: 1rem;
+    }
+
+    .product {
+        max-width: 140px;
+    }
+
+    .product p {
+        font-size: 0.8rem;
+    }
+
+    .mais-vendidos {
+        padding: 2rem 1rem;
+    }
+
+    .produto {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .produto span {
+        font-size: 1.2rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 250px;
+    }
+
+    .informacoes p {
+        font-size: 0.9rem;
+    }
+
+    .informacoes h2 {
+        font-size: 1.5rem;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 20px;
+    }
+
+    .cartao {
+        padding: 20px;
+    }
+
+    h1.text-produtos {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p.subtitle-produtos {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
