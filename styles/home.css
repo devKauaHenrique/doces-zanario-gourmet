@@ -508,11 +508,12 @@ footer.fundo{
     }
 
     .left-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;  
     }
 
     .left-content p {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin-top: 10px;
     }
 
     .nav-text span {
@@ -555,6 +556,10 @@ footer.fundo{
         padding: 2rem 1rem;
     }
 
+    .mais-vendidos .lista-produtos{
+        padding: 2rem;
+    }
+
     .produto {
         flex: 1 1 100%;
         max-width: 100%;
@@ -562,6 +567,26 @@ footer.fundo{
 
     .produto span {
         font-size: 1.2rem;
+    }
+
+    .about-us{
+        padding: 1.2rem;
+    }
+
+    section.about-us h1{
+        font-size: 2.5rem;
+    }
+
+    section.about-us h2 {
+    font-size: 1.2rem;
+    }
+    
+    section.about{
+        padding: 1.5rem;
+    }
+
+    section.about h1{
+        font-size: 2.5rem;
     }
 
     .about-container {
@@ -591,6 +616,14 @@ footer.fundo{
         padding: 20px;
     }
 
+    section.my-products h1{
+        font-size: 2.5rem;
+    }
+
+    section.my-products h2{
+        font-size: 1.2rem;
+    }
+
     h1.text-produtos {
         font-size: 2rem;
         text-align: center;
@@ -598,6 +631,19 @@ footer.fundo{
 
     p.subtitle-produtos {
         font-size: 1rem;
+        text-align: center;
+    }
+
+    section.my-galery{
+        padding: 1.5rem;
+    }
+
+    section.my-galery h1{
+        font-size: 2.5rem;
+    }
+
+    section.my-galery h2{
+        font-size: 1.2rem;
         text-align: center;
     }
 }
