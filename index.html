@@ -27,6 +27,15 @@
     <link rel="stylesheet" href="styles/cards.css">
     <link rel="stylesheet" href="styles/home.css">
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FPJBZN9WH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0FPJBZN9WH');
+    </script>
+
     <title>Zanario Gourmet</title>
 </head>
 
@@ -43,8 +52,8 @@
                 <h1>Para quem sempre cuidou de você ♡</h1>
                 <p>Presentes doces que expressam amor em cada detalhe.</p>  
                 <div class="buttons">
-                    <a href="#presentes" class="btn-1">Ver presentes</a>
-                    <a href="#presentes-mais-vendidos" class="btn-2">Ver + vendidos</a>
+                    <a href="#presentes" class="btn-1" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'ver_presentes'});">Ver presentes</a>
+                    <a href="#presentes-mais-vendidos" class="btn-2" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'mais_vendidos'});">Ver + vendidos</a>
                 </div>
             </div>
         </section>
@@ -118,7 +127,7 @@
                     <span>Cesta Dia das Mães</span>
                     <p>Diversos doces especiais para sua mãe</p>
                     <div class="valor">
-                        <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet%2C%20visualizando%20o%20seu%20site%20gostei%20da%20Cesta%20de%20Dia%20das%20Mães%20.%0A%0AO%20que%20preciso%20para%20finalizar%20o%20meu%20pedido%3F" target="_blank">
+                        <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet%2C%20visualizando%20o%20seu%20site%20gostei%20da%20Cesta%20de%20Dia%20das%20Mães%20.%0A%0AO%20que%20preciso%20para%20finalizar%20o%20meu%20pedido%3F" target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'cesta_dia_das_maes'});">
                             <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i>
                             Quero este
                         </a>
@@ -129,7 +138,7 @@
                     <span>Cone Trufado</span>
                     <p>Delicioso cone trufado de 100g - Sabor Chokito</p>
                     <div class="valor">
-                        <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet%2C%20visualizando%20o%20seu%20site%20gostei%20do%20*Cone%20Trufado*%20de%20*Chokito*%20de%20*100g*.%20O%20que%20preciso%20para%20finalizar%20o%20meu%20pedido%3F" target="_blank">
+                        <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet%2C%20visualizando%20o%20seu%20site%20gostei%20do%20*Cone%20Trufado*%20de%20*Chokito*%20de%20*100g*.%20O%20que%20preciso%20para%20finalizar%20o%20meu%20pedido%3F" target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'cone_trufado'});">
                             <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i>
                             Quero este
                         </a>
@@ -140,7 +149,7 @@
                     <span>Doces de Festa</span>
                     <p>100 unidades dos melhores docinhos - 4 sabores</p>
                     <div class="valor">
-                        <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet%2C%20visualizando%20o%20seu%20site%20gostei%20dos%20*Doces%20de%20Festa*%20de%20*4%20sabores*%20com%20*100%20unidades*.%20O%20que%20preciso%20para%20finalizar%20o%20meu%20pedido%3F" target="_blank">
+                        <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet%2C%20visualizando%20o%20seu%20site%20gostei%20dos%20*Doces%20de%20Festa*%20de%20*4%20sabores*%20com%20*100%20unidades*.%20O%20que%20preciso%20para%20finalizar%20o%20meu%20pedido%3F" target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'doces_de_festa'});">
                             <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i>
                             Quero este
                         </a>
@@ -256,7 +265,7 @@
                             <h2 class="name">Bolo</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'bolo'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -272,7 +281,7 @@
                             <h2 class="name">Brigadeiros</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'brigadeiros'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -288,7 +297,7 @@
                             <h2 class="name">Doces Finos</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'doces_finos'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -306,7 +315,7 @@
                             <h2 class="name">Brownie</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'brownie'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -322,7 +331,7 @@
                             <h2 class="name">Bolo de Pote</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'bolo_de_Pote'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -338,7 +347,7 @@
                             <h2 class="name">Trufas</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'trufas'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -356,7 +365,7 @@
                             <h2 class="name">Panetone Trufado</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'panetone_trufado'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -372,7 +381,7 @@
                             <h2 class="name">Ovo Trufado</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'ovo_trufado'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -388,7 +397,7 @@
                             <h2 class="name">Ovo de Páscoa</h2>
                             <button class="button">
                                 <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                                    target="_blank">Venha comprar</a>
+                                    target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'ovo_de_pascoa'});">Venha comprar</a>
                             </button>
                         </div>
                     </div>
@@ -458,9 +467,7 @@
 
     <section class="encomenda">
         <h1 class="text-4xl lg:text-6xl font-bold">Faça sua encomenda</h1>
-        <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-            target="_blank"
-            class="mt-3 px-6 py-1 rounded-2xl border-2 text-white text-2xl md:text-3xl font-della-respira font-medium border-white hover:border-verde">Peça
+        <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?" target="_blank" class="mt-3 px-6 py-1 rounded-2xl border-2 text-white text-2xl md:text-3xl font-della-respira font-medium border-white hover:border-verde" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'fazer_encomenda'});">Peça
             agora!</a>
     </section>
 
@@ -479,7 +486,7 @@
                     <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
                     <a class="dados text-white text-xl md:text-base"
                         href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                        target="_blank">(11) 98847-7515</a>
+                        target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'contato'});">(11) 98847-7515</a>
                 </div>
                 <div class="flex items-center gap-3 md:gap-2">
                     <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
@@ -497,8 +504,7 @@
                         <i
                             class="fa-brands fa-instagram text-white text-3xl md:text-2xl rounded-full px-3 py-2"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                        target="_blank">
+                    <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?" target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'contato'});">
                         <i
                             class="fa-brands fa-whatsapp text-white text-3xl md:text-2xl rounded-full px-3 py-2"></i>
                     </a>
@@ -510,6 +516,7 @@
         <span class="text-xl md:text-lg font-della-respira">&copy; Todos os direitos reservados </span>
     <script src="/scripts/scripts.js"></script>
     <script src="/scripts/slides.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </body>
 
 </html>
