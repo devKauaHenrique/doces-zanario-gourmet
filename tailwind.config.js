@@ -12,7 +12,6 @@ module.exports = {
       },
     },
     backgroundImage: {
-      // 'home': "url(/assets/home.jpg)",
       'fundo-bolo': "url(/assets/bolos-artesanais.jpg)"
     },
     height: {
@@ -20,9 +19,7 @@ module.exports = {
       'screen-minus-header-2': 'calc(100vh - 5rem)'
     },
     fontFamily: {
-      'poppins': ['Poppins', 'sans-serif'],
       'montserrat': ['Montserrat', 'sans-serif'],
-      'satisfy': ['Satisfy', 'sans-serif'],
       'della-respira': ['Della Respira', 'sans-serif'],
     },
   },
