@@ -229,6 +229,214 @@ li.link-hover:hover a{
     background: rgba(243, 189, 203, 0.6);
 }
 
+.highlights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title h2{
+    font-family: 'Della Respira', 'sans-serif';
+    font-size: 3rem;
+    color: #CD8195;
+    font-weight: 600;
+}
+
+.section-divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: .2rem;
+}
+
+.section-divider::before, .section-divider::after{
+    content: "";
+    width: 80px;
+    height: 2.5px;
+    background-color: #98C5AE;
+    border-radius: 999px;
+}
+
+.section-divider span{
+    color: #98C5AE;
+    font-size: 1.3rem;
+}
+
+.section-title p{
+    color: #98C5A5;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.highlights-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.highlight-card{
+    background-color: #FBF7EE;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.highlight-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.08);
+}
+
+.highlight-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.highlight-info{
+    padding: 1.5rem;
+}
+
+.highlight-info h3{
+    color: #CD8195;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+}
+
+.highlight-info p{
+    color: #98C5AE;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-info a{
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    color: #98C5AE;
+    border: 1px solid #98C5AE;
+    border-radius: 999px;
+    padding: .5rem 2rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.highlight-info a:hover{
+    gap: 1rem;
+    background-color: #98C5AE;
+    color: #FBF7EE;
+}
+
+.highlights .all-products{
+    margin-top: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    text-align: center;
+    color: #CD8195;
+    border: 1px solid #CD8195;
+    border-radius: 999px;
+    padding: .5rem 2rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.highlights .all-products:hover{
+    gap: 1rem;
+    background-color: #CD8195;
+    color: #FBF7EE;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.section-title h2{
+    color: #CD8195;
+    font-family: 'Della Respira', 'sans-serif';
+    font-size: 3.5rem;
+}
+
+.section-title p{
+    color: #98C5AE;
+    font-size: 1.1rem;
+}
+
+.about-container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3rem;
+}
+
+.about-content{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.8rem;
+}
+
+.about-content span{
+    color: #CD8195;
+    font-weight: 600;
+}
+
+.about-content p{
+    max-width: 650px;
+    color: #6c4a3b;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 1.05rem;
+}
+
+.about-image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img{
+    width: 100%;
+    max-width: 360px;
+    display: block;
+}
+
+.owner-card{
+    color: #CD8195;
+    border: 1px solid #CD8195;
+    border-radius: 999px;
+    padding: .5rem 2rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.owner-card:hover{
+    gap: 1rem;
+    background-color: #CD8195;
+    color: #FBF7EE;
+}
+
 h1.text-produtos{
     color: #CD8195;
     font-family: 'Della Respira', 'sans-serif';
@@ -379,7 +587,7 @@ p.subtitle-produtos{
     box-shadow: 8px 8px 16px -3px rgba(205, 129, 149, 0.6);
 }
 
-section.about h1{
+/* section.about h1{
     color: #CD8195;
     font-family: 'Della Respira', 'sans-serif';
 }
@@ -408,21 +616,21 @@ section.about-us h2{
     font-family: 'Montserrat', 'sans-serif';
     font-weight: bold;
     font-size: 1.3rem;
-}
+} */
 
-.about-us {
+/* .about-us {
     padding: 4rem 1.5rem;
     display: flex;
     justify-content: center;
-}
+} */
 
-.about-container {
+/* .about-container {
     max-width: 1100px;
     display: flex;
     align-items: center;
     gap: 3rem;
     margin-top: 2rem;
-}
+} */
 
 .informacoes {
     flex: 1;
@@ -444,7 +652,7 @@ section.about-us h2{
     font-family: 'Montserrat', 'sans-serif';
 }
 
-.about-image {
+/* .about-image {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -469,7 +677,7 @@ section.about-us h2{
 
 .about-image img:hover {
     transform: scale(1.05);
-}
+} */
 
 .cartoes{
     display: flex;
