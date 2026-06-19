@@ -4,8 +4,7 @@ body{
 
 .hero{
     background-color: #98C5AE;
-    font-family: 'Montserrat', 'sans-serif';
-    padding: 4px;
+    font-family: 'Della Respira', 'sans-serif';
     display: flex;
     gap: 0.5rem;
     font-size: 1rem;
@@ -13,6 +12,76 @@ body{
     justify-content: center;
     color: #FBF7EE;
     width: 100%;
+}
+
+.hero nav{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-menu ul li:last-child a{
+    background-color: #CD8195;
+    color: #FBF7EE;
+    padding: 1rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.nav-menu ul li:last-child a:hover{
+    background-color: #FBF7EE;
+    color: #CD8195;
+    box-shadow: 8px 8px 16px -3px rgba(243, 189, 203, 0.6);
+}
+
+li.link-hover{
+    position: relative;
+}
+
+li.link-hover::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #CD8195;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.6s;
+}
+
+li.link-hover:hover::before{
+    scale: 1;
+}
+
+li.link-hover:hover a{
+    color: #CD8195;
 }
 
 .header {
@@ -23,39 +92,45 @@ body{
 }
 
 .index {
-    position: relative;
-    height: 100vh;
+    height: calc(100vh - 95px);
     display: flex;
     align-items: center;
     padding: 0 4rem;
-}
-
-.banner-image {
-    position: absolute;
-    inset: 0;
-    background: url("/assets/home.jpg") center/cover no-repeat;
-    z-index: -1;
+    background: url("/assets/index.webp") center/cover no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .left-content {
-    max-width: 600px;
+    max-width: 1200px;
 }
 
 .left-content h1{
     color: #CD8195;
     font-family: 'Della Respira', 'sans-serif';
     font-weight: bold;
-    font-size: 4.5rem;
-    max-width: 600px;
-    line-height: 1.1;
+    font-size: 3.5rem;
+    max-width: 660px;
+    line-height: 0.9;
 }
 
-.left-content p{
+.left-content p.subtitle{
     color: #98C5AE;
     font-weight: bold;
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 1.4rem;
-    max-width: 400px;
+    font-size: 1.5rem;
+    max-width: 500px;
+    line-height: 1.3;
+    margin-top: 1rem;
+}
+
+.left-content p.description{
+    color: #98C5AE;
+    font-family: 'Montserrat', 'sans-serif';
+    text-align: left;
+    font-size: 1rem;
+    max-width: 580px;
     line-height: 1.3;
 }
 
@@ -63,52 +138,95 @@ body{
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .left-content .buttons a{
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: 500;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    border-radius: 5rem;
     padding: 1rem 2rem;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
     transition: all 0.5s ease;
 }
 
-.buttons a.btn-1{
+.buttons a.btn-1, .buttons a.btn-2{
     color: #FBF7EE;
     background-color: #98C5AE;
 }
 
-.buttons a.btn-2{
-    background-color: #FBF7EE;
+.buttons .btn-1:hover, .buttons .btn-2:hover{
+    background: #FBF7EE;
     color: #98C5AE;
-}
-
-.buttons a:hover{
+    transform: translateY(-4px);
+    transform: translateY(-4px);
     box-shadow: 8px 8px 16px -3px rgba(152, 197, 174, 0.6);
 }
 
-section.subhero{
-    background-color: #98C5AE;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.btn-1 i, .btn-2 i {
+    transition: .3s;
 }
 
-.elements{
-    color: #FDF9F8;
+.btn-1:hover i, .btn-2:hover i {
+    transform: scale(1.15);
+}
+
+.subhero{
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 660px;
+    background-color: #FBF7EE;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 20;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.benefit{
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex: 1;
+    transition: .3s;
 }
 
-.elements i{
-    color: #FDF9F8;
+.benefit:hover{
+    transform: translateY(-4px);
+}
+
+.benefit i{
     font-size: 2rem;
+    min-width: 40px;
+    color: #CD8195;
+    margin-bottom: 6px;
 }
 
-.elements-text span{
+.benefit-text h3{
+    font-size: .95rem;
+    line-height: 1.3;
     font-weight: bold;
+    color: #CD8195;
+    margin-bottom: .3rem;
+}
+
+.benefit-text p{
+    color: #98C5AE;
+    font-size: .85rem;
+    line-height: 1.4;
+}
+
+.divider{
+    width: 1px;
+    height: 70px;
+    background: rgba(243, 189, 203, 0.6);
 }
 
 h1.text-produtos{

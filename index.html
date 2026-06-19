@@ -45,50 +45,69 @@
 
 <body>
     <section class="hero">
-        <i class="fa-solid fa-gift"></i>
-        <p>Encomendas até 07/05 para entrega garantida no Dia das Mães!</p>
+        <nav>
+            <div class="nav-menu">
+                <ul>
+                    <li class="link-hover"><a href="#">Início</a></li>
+                    <li class="link-hover"><a href="#">Cardápio</a></li>
+                    <li class="link-hover"><a href="#">Sobre Nós</a></li>
+                    <li class="link-hover"><a href="#">Galeria</a></li>
+                    <li class="link-hover"><a href="#">Avaliações</a></li>
+                    <li><a href="#"> <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i> Fazer orçamento</a></li>
+                </ul>
+            </div>
+        </nav>
     </section>
-    <main class="w-full h-screen bg-home bg-cover bg-center">
-
+    
+    <main class="">
         <section class="index">
             <div class="banner-image"></div>
             <div class="left-content">
-                <h1>Para quem sempre cuidou de você ♡</h1>
-                <p>Presentes doces que expressam amor em cada detalhe.</p>  
+                <h1>Doces artesanais feitos para tornar seus momentos ainda mais especiais ♡</h1>
+                <p class="subtitle"></p>  
+                <p class="description">Brigadeiros gourmet, brownies, bolos no pote e muito mais, preparados com ingredientes selecionados e muito carinho em cada detalhe.</p>
                 <div class="buttons">
-                    <a href="#presentes" class="btn-1" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'ver_presentes'});">Ver presentes</a>
-                    <a href="#presentes-mais-vendidos" class="btn-2" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'mais_vendidos'});">Ver + vendidos</a>
-                </div>
-            </div>
-        </section>
+                    <a href="#" class="btn-1"> <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i>Fazer pedido pelo Whatsapp</a>
+                    <a href="#presentes-mais-vendidos" class="btn-2" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'mais_vendidos'});"> <i class="fa-solid fa-book-open"></i> Ver Cardápio</a>
 
-        <section class="subhero">
-            <div class="elements">
-                <i class="fa-solid fa-truck"></i>
-                <div class="elements-text">
-                    <span>Entrega para Suzano e Região</span>
-                    <p>Consulte seu prazo</p>
-                </div>
-            </div>
-            <div class="elements">
-                <i class="fa-solid fa-gift"></i>
-                <div class="elements-text">
-                    <span>Embalagens especiais</span>
-                    <p>Prontas para presentear</p>
-                </div>
-            </div>
-            <div class="elements">
-                <i class="fa-regular fa-comment-dots"></i>
-                <div class="elements-text">
-                    <span>Mensagem personalizada</span>
-                    <p>Gratuita em todos os pedidos</p>
-                </div>
-            </div>
-            <div class="elements">
-                <i class="fa-regular fa-credit-card"></i>
-                <div class="elements-text">
-                    <span>Pagamento seguro</span>
-                    <p>PIX, Cartão e mais</p>
+                <div class="subhero">
+                    <div class="benefit">
+                        <div class="benefit-text">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                            <h3>Ingredientes de Qualidade</h3>
+                            <p>Selecionados com todo cuidado</p>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="benefit">
+                        <div class="benefit-text">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <h3>Produção Artesanal</h3>
+                            <p>Feito à mão com dedicação</p>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="benefit">
+                        <div class="benefit-text">
+                            <i class="fa-solid fa-truck"></i>
+                            <h3>Sua Entrega Rápida</h3> 
+                            <p>Para Suzano e toda região</p>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="benefit">
+                        <div class="benefit-text">
+                            <i class="fa-regular fa-heart"></i>
+                            <h3>Feito com Carinho</h3>
+                            <p>Cada detalhe importa</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
