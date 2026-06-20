@@ -255,7 +255,7 @@ li.link-hover:hover a{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: .2rem;
+    margin-bottom: 0;
 }
 
 .section-divider::before, .section-divider::after{
@@ -273,7 +273,7 @@ li.link-hover:hover a{
 
 .section-title p{
     color: #98C5A5;
-    margin-bottom: 2rem;
+    margin-bottom: .8rem;
     font-weight: 500;
 }
 
@@ -523,7 +523,7 @@ h1.text-produtos{
 
 .menu-grid{
     max-width: 1200px;
-    margin: .6rem auto;
+    margin: .2rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -553,16 +553,23 @@ h1.text-produtos{
     flex-direction: column;
 }
 
+.menu-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 .menu-icon{
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: #CD8195;
     color: #FBF7EE;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    flex-shrink: 0;
 }
 
 .menu-icon i{
@@ -572,35 +579,43 @@ h1.text-produtos{
 .menu-content h3{
     color: #CD8195;
     font-size: 1.8rem;
+    font-weight: 700;
     font-family: 'Della Respira', serif;
-    margin-bottom: .7rem;
+    margin: 0;
 }
 
 .menu-content p{
-    color: #6c4a3b;
+    color: #98C5A5;
     line-height: 1.6;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
-.menu-link{
+.menu-content a{
     display: inline-flex;
     align-items: center;
+    width: 200px;
     gap: .5rem;
-    color: #CD8195;
+    color: #98C5AE;
+    border: 1px solid #98C5AE;
+    border-radius: 999px;
+    padding: .5rem 2rem;
     font-weight: 600;
     transition: .3s;
 }
 
-.menu-link:hover{
+.menu-content a:hover{
     gap: 1rem;
+    background-color: #98C5AE;
+    color: #FBF7EE;
 }
 
 .menu-cta{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 2rem auto;
     background-color: #FBF7EE;
     border-radius: 24px;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -610,6 +625,7 @@ h1.text-produtos{
 .menu-cta p{
     color: #6c4a3b;
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .menu-cta a{
@@ -635,6 +651,149 @@ h1.text-produtos{
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.avaliacoes{
+    padding: 6rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.avaliacoes-grid{
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.avaliacao-card{
+    background-color: #FBF7EE;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    transition: .3s;
+}
+
+.avaliacao-card:hover{
+    transform: translateY(-8px);
+}
+
+.stars{
+    display: flex;
+    gap: .4rem;
+    color: #CD8195;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.avaliacao-text{
+    color: #6c4a3b;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.client{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.client img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client h4{
+    color: #CD8195;
+    font-family: 'Della Respira', serif;
+    font-weight: 600;
+    margin-bottom: .2rem;
+}
+
+.client span{
+    color: #98C5AE;
+    font-family: 'Della Respira', serif;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.galeria{
+    padding: 1rem 2rem;
+    margin-bottom: 6rem;
+}
+
+.galeria-grid{
+    max-width: 1200px;
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.galeria-item{
+    background-color: #FBF7EE;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.galeria-item:hover {
+    transform: translateY(-8px);
+}
+
+.galeria-img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: .3s;
+}
+
+.galeria-img:hover{
+    transform: scale(1.05);
+}
+
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 2rem;
+}
+
+.lightbox{
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.4);
+}
+
+.close{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 45px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.close:hover{
+    transform: scale(1.2);
+}
+
+.lightbox.active{
+    display: flex;
 }
 
 p.subtitle-produtos{
