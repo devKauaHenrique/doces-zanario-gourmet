@@ -1,6 +1,6 @@
 # 🍰 Zanário Gourmet - Site Oficial
 
-Site institucional e catálogo digital desenvolvido para a confeitaria **Zanário Gourmet**, com foco em datas sazonais (como Dia das Mães) e apresentação de produtos de forma elegante, responsiva e otimizada.
+Site institucional e catálogo digital desenvolvido para a confeitaria **Zanário Gourmet**, com foco na apresentação de produtos de forma elegante, responsiva e otimizada.
 
 🔗 Acesse o projeto:  
 https://zanario-gourmet.vercel.app/
