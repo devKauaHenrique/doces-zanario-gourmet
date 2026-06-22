@@ -27,8 +27,6 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="styles/output.css">
-    <link rel="stylesheet" href="styles/slides.css">
-    <link rel="stylesheet" href="styles/cards.css">
     <link rel="stylesheet" href="styles/home.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FPJBZN9WH"></script>
@@ -48,12 +46,13 @@
         <nav>
             <div class="nav-menu">
                 <ul>
-                    <li class="link-hover"><a href="#">Início</a></li>
-                    <li class="link-hover"><a href="#">Destaque</a></li>
-                    <li class="link-hover"><a href="#">Sobre Nós</a></li>
-                    <li class="link-hover"><a href="#">Galeria</a></li>
-                    <li class="link-hover"><a href="#">Avaliações</a></li>
-                    <li><a href="#"> <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i> Fazer orçamento</a></li>
+                    <li class="link-hover"><a href="#hero">Início</a></li>
+                    <li class="link-hover"><a href="#highlights">Destaque</a></li>
+                    <li class="link-hover"><a href="#cardapio">Cardápio</a></li>
+                    <li class="link-hover"><a href="#about-us">Sobre Nós</a></li>
+                    <li class="link-hover"><a href="#galeria">Galeria</a></li>
+                    <li class="link-hover"><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank"> <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i> Fazer orçamento</a></li>
                 </ul>
             </div>
         </nav>
@@ -67,8 +66,8 @@
                 <p class="subtitle"></p>  
                 <p class="description">Brigadeiros gourmet, brownies, bolos no pote e muito mais, preparados com ingredientes selecionados e muito carinho em cada detalhe.</p>
                 <div class="buttons">
-                    <a href="#" class="btn-1"> <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i>Fazer pedido pelo Whatsapp</a>
-                    <a href="#presentes-mais-vendidos" class="btn-2" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'mais_vendidos'});"> <i class="fa-solid fa-book-open"></i> Ver Cardápio</a>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank" class="btn-1"> <i class="fa-brands fa-whatsapp md:text-3xl text-2xl"></i>Fazer pedido pelo Whatsapp</a>
+                    <a href="#cardapio" class="btn-2" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'mais_vendidos'});"> <i class="fa-solid fa-book-open"></i> Ver Cardápio</a>
 
                 <div class="subhero">
                     <div class="benefit">
@@ -113,7 +112,7 @@
         </section>
     </main>
 
-    <section class="highlights">
+    <section class="highlights" id="highlights">
         <div class="section-title">
             <h2>Nossos Destaques</h2>
             <div class="section-divider">
@@ -124,50 +123,50 @@
 
         <div class="highlights-grid">
             <article class="highlight-card">
-                <img src="./assets/brownie-produtos.webp" alt="Brigadeiro Gourmet">
+                <img src="./assets/doces/barra-chocolate.png" alt="Barra de Chocolate">
 
                 <div class="highlight-info">
-                    <h3>Brigadeiros Gourmet</h3>
-                    <p>Sabores irresistíveis preparados artesanalmente.</p>
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <h3>Barra Personalizada</h3>
+                    <p>Barra de chocolate com escrita Personalizada.</p>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Comprar produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
 
             <article class="highlight-card">
-                <img src="./assets/brownie-produtos.webp" alt="Brigadeiro Gourmet">
+                <img src="./assets/doces/docinhos-1.webp" alt="Doces de Festa">
 
                 <div class="highlight-info">
-                    <h3>Brigadeiros Gourmet</h3>
-                    <p>Sabores irresistíveis preparados artesanalmente.</p>
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <h3>Docinhos de Festa</h3>
+                    <p>Sabores irresistíveis preparados com os melhores ingredientes.</p>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Comprar produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
 
             <article class="highlight-card">
-                <img src="./assets/brownie-produtos.webp" alt="Brigadeiro Gourmet">
+                <img src="./assets/doces/kit-cesta-dia-das-maes.jpeg" alt="Cesta Personalizada">
 
                 <div class="highlight-info">
-                    <h3>Brigadeiros Gourmet</h3>
-                    <p>Sabores irresistíveis preparados artesanalmente.</p>
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <h3>Cesta Personalizada</h3>
+                    <p>Cesta personalizada recheada com muitos produtos.</p>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Comprar produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
 
             <article class="highlight-card">
-                <img src="./assets/brownie-produtos.webp" alt="Brigadeiro Gourmet">
+                <img src="./assets/doces/kit-doces-2.jpeg" alt="Kit de Doces">
 
                 <div class="highlight-info">
-                    <h3>Brigadeiros Gourmet</h3>
-                    <p>Sabores irresistíveis preparados artesanalmente.</p>
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <h3>Caixa de Doces</h3>
+                    <p>Kit com doces dos mais variavéis tipos de acordo com seu gosto.</p>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Comprar produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
         </div>
 
-        <a href="#" class="all-products">Ver todos os produtos <i class="fa-solid fa-arrow-right"></i> </a>
+        <a href="#cardapio" class="all-products">Ver todos os produtos <i class="fa-solid fa-arrow-right"></i> </a>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="section-title">
             <h2>Quem somos</h2>
             <div class="section-divider">
@@ -218,7 +217,7 @@
                     </div>
                 </div>
 
-                    <img src="assets/brownie-produtos.webp" alt="Ingredientes de Qualidade">
+                    <img src="assets/doces/bolo-de-pote-maracuja.webp" alt="Ingredientes de Qualidade">
 
                     <p>Utilizamos ingredientes cuidadosamente escolhidos para garantir sabor, textura e qualidade em cada receita.</p>
             </article>
@@ -235,7 +234,7 @@
                     </div>
                 </div>
 
-                    <img src="assets/brownie-produtos.webp" alt="Produção Artesanal">
+                    <img src="assets/doces/doces-finos-2.webp" alt="Produção Artesanal">
 
                     <p>Cada doce é preparado à mão com carinho, dedicação e atenção aos mínimos detalhes.</p>
             </article>
@@ -252,14 +251,14 @@
                     </div>
                 </div>
 
-                    <img src="assets/brownie-produtos.webp" alt="Presente Especial">
+                    <img src="assets/doces/doce-surpresa.webp" alt="Presente Especial">
 
                     <p>Embalagens elegantes e personalizadas para transformar qualquer ocasião em um momento inesquecível.</p>
             </article>
         </div>
     </section>
 
-    <section class="menu-section">
+    <section class="menu-section" id="cardapio">
         <div class="section-title">
             <h2>Nosso <span>Cardápio</span></h2>
 
@@ -272,7 +271,7 @@
 
         <div class="menu-grid">
             <article class="menu-card">
-                <img src="assets/brownie-produtos.webp" alt="Brownies">
+                <img src="assets/doces/barra-chocolate.png" alt="Barras de Chocolate">
 
                 <div class="menu-content">
                     <div class="menu-header">
@@ -280,17 +279,17 @@
                             <i class="fa-solid fa-cookie"></i>
                         </div>
 
-                        <h3>Brownies</h3>
+                        <h3>Barras de Chocolate</h3>
                     </div>
                     
                     <p>Irresistíveis, macios e cheios de sabor.</p>
 
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
 
             <article class="menu-card">
-                <img src="assets/brownie-produtos.webp" alt="Brownies">
+                <img src="assets/doces/bolo-de-pote-maracuja-2.webp" alt="Bolo de Pote">
 
                 <div class="menu-content">
                     <div class="menu-header">
@@ -298,17 +297,17 @@
                             <i class="fa-solid fa-cookie"></i>
                         </div>
                         
-                        <h3>Brownies</h3>
+                        <h3>Bolo de Pote</h3>
                     </div>
                     
                     <p>Irresistíveis, macios e cheios de sabor.</p>
 
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
 
             <article class="menu-card">
-                <img src="assets/brownie-produtos.webp" alt="Brownies">
+                <img src="assets/doces/bolo-ninho-com-morango.webp" alt="Bolos">
 
                 <div class="menu-content">
                     <div class="menu-header">
@@ -316,17 +315,17 @@
                             <i class="fa-solid fa-cookie"></i>
                         </div>
                         
-                        <h3>Brownies</h3>
+                        <h3>Bolos</h3>
                     </div>
                     
                     <p>Irresistíveis, macios e cheios de sabor.</p>
 
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
 
             <article class="menu-card">
-                <img src="assets/brownie-produtos.webp" alt="Brownies">
+                <img src="assets/doces/kit-doces-4.jpeg" alt="Kits de Doces">
 
                 <div class="menu-content">
                     <div class="menu-header">
@@ -334,17 +333,17 @@
                             <i class="fa-solid fa-cookie"></i>
                         </div>
                         
-                        <h3>Brownies</h3>
+                        <h3>Kits de Doces</h3>
                     </div>
                     
                     <p>Irresistíveis, macios e cheios de sabor.</p>
 
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
 
             <article class="menu-card">
-                <img src="assets/brownie-produtos.webp" alt="Brownies">
+                <img src="assets/doces/cone-trufado.webp" alt="Cone Trufado">
 
                 <div class="menu-content">
                     <div class="menu-header">
@@ -352,17 +351,17 @@
                             <i class="fa-solid fa-cookie"></i>
                         </div>
                         
-                        <h3>Brownies</h3>
+                        <h3>Cone Trufado</h3>
                     </div>
                     
                     <p>Irresistíveis, macios e cheios de sabor.</p>
 
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
 
             <article class="menu-card">
-                <img src="assets/brownie-produtos.webp" alt="Brownies">
+                <img src="assets/doces/doces-finos.webp" alt="Doces Finos">
 
                 <div class="menu-content">
                     <div class="menu-header">
@@ -370,26 +369,80 @@
                             <i class="fa-solid fa-cookie"></i>
                         </div>
                         
-                        <h3>Brownies</h3>
+                        <h3>Doces Finos</h3>
                     </div>
                     
                     <p>Irresistíveis, macios e cheios de sabor.</p>
 
-                    <a href="#">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="assets/doces/docinhos-2.webp" alt="Doces de Festa">
+
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-cookie"></i>
+                        </div>
+                        
+                        <h3>Doces de Festa</h3>
+                    </div>
+                    
+                    <p>Irresistíveis, macios e cheios de sabor.</p>
+
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="assets/doces/panetone-2.webp" alt="Panettone Recheado">
+
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-cookie"></i>
+                        </div>
+                        
+                        <h3>Panettone Recheado</h3>
+                    </div>
+                    
+                    <p>Irresistíveis, macios e cheios de sabor.</p>
+
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </article>
+
+            <article class="menu-card">
+                <img src="assets/doces/ovo-pascoa-2.webp" alt="Ovo de Páscoa">
+
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-cookie"></i>
+                        </div>
+                        
+                        <h3>Ovo de Páscoa</h3>
+                    </div>
+                    
+                    <p>Irresistíveis, macios e cheios de sabor.</p>
+
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">Ver produto <i class="fa-solid fa-arrow-right"></i> </a>
                 </div>
             </article>
         </div>
 
         <div class="menu-cta">
             <p>Não encontrou o que procura? Temos opções personalizadas para sua ocasião!</p>
-            <a href="#">
+            <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
                 Falar no WhatsApp
             </a>
         </div>
     </section>
 
-    <section class="avaliacoes">
+    <section class="avaliacoes" id="avaliacoes">
         <div class="section-title">
             <h2>O que nossos <span>clientes dizem</span></h2>
 
@@ -463,7 +516,7 @@
         </div>
     </section>
 
-    <section class="galeria">
+    <section class="galeria" id="galeria">
         <div class="section-title">
             <h2>Nossa <span>Galeria</span></h2>
 
@@ -476,41 +529,63 @@
 
         <div class="galeria-grid">
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/barra-chocolate.png" class="galeria-img" alt="Barra de Chocolate">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/doce-surpresa.webp" class="galeria-img" alt="Doce Surpresa">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/trufas.webp" class="galeria-img" alt="Trufas">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/panetone-3.webp" class="galeria-img" alt="Panettone">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/ovo-pascoa-4.webp" class="galeria-img" alt="Ovo de Páscoa">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/kit-cesta-dia-das-maes.jpeg" class="galeria-img" alt="Cesta Dia das Mães">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/docinhos=3.webp" class="galeria-img" alt="Doces Finos">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/cone-trufado.webp" class="galeria-img" alt="Cone Trufado">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/bolo-ninho-com-morango.webp" class="galeria-img" alt="Bolo Ninho com Morango">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/ovo-pascoa-3.webp" class="galeria-img" alt="Ovo de Páscoa">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/kit-doces-4.jpeg" class="galeria-img" alt="">
             </article>
             <article class="galeria-item">
-                <img src="assets/brownie-produtos.webp" class="galeria-img" alt="">
+                <img src="assets/doces/panetone-1.webp" class="galeria-img" alt="">
             </article>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-overlay">
+            <div class="cta-container">
+                <span class="cta-badge">
+                    ✨ Faça um momento especial ainda hoje
+                </span>
+                <h2>Doces feitos com carinho para tornar qualquer ocasião inesquecível.</h2>
+                <p>Aniversários, presentes, lembranças ou simplesmente para matar a vontade de um doce artesanal. Escolha seus favoritos e faça sua encomenda pelo WhatsApp.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank" class="btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Fazer encomenda
+                </a>
+                <a href="#cardapio" class="btn-secondary">
+                    <i class="fa-solid fa-book-open"></i>
+                    Ver cardápio
+                </a>
+            </div>
         </div>
     </section>
 
@@ -518,55 +593,38 @@
         <i class="fa-solid fa-arrow-up"></i>
     </div>
 
-    <section class="encomenda">
-        <h1 class="text-4xl lg:text-6xl font-bold">Faça sua encomenda</h1>
-        <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?" target="_blank" class="mt-3 px-6 py-1 rounded-2xl border-2 text-white text-2xl md:text-3xl font-della-respira font-medium border-white hover:border-verde" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'fazer_encomenda'});">Peça
-            agora!</a>
-    </section>
-
-    <footer class="w-full h-full bg-rosa flex justify-center md:items-center py-12 px-8">
-        <div class="flex flex-col items-center md:flex-row gap-6 md:gap-16">
-            <div class="flex flex-col text-center gap-4">
-                <h2 class="font-bold text-3xl text-white"> <i
-                        class="fa-solid fa-location-dot text-white text-4xl md:text-2xl"></i> Onde estamos</h2>
-                <span class="dados text-white text-xl md:text-base font-medium">Suzano-SP</span>
-                <span class="dados text-white text-xl md:text-base font-medium">Av. Brasília, 1233</span>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <a href="#hero">Início</a>
+                <a href="#highlights">Destaques</a>
+                <a href="#about-us">Sobre nós</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#galeria">Galeria</a>
             </div>
-            <div class="flex flex-col items-center text-center gap-4">
-                <h2 class="font-bold text-3xl text-white"> <i
-                        class="fa-solid fa-phone text-4xl md:text-2xl"></i> Entre em contato</h2>
-                <div class="flex items-center gap-3 md:gap-2">
-                    <i class="fa-brands fa-whatsapp text-white text-4xl md:text-2xl"></i>
-                    <a class="dados text-white text-xl md:text-base"
-                        href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?"
-                        target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'contato'});">(11) 98847-7515</a>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <div class="footer-info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Suzano - SP</span>
                 </div>
-                <div class="flex items-center gap-3 md:gap-2">
-                    <i class="fa-brands fa-instagram text-white text-4xl md:text-2xl"></i>
-                    <a class="dados text-white text-xl md:text-base"
-                        href="https://www.instagram.com/zanario_gourmet_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank">@zanario_gourmet_</a>
+                <div class="footer-info">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://wa.me/5511988477515?text=Ol%C3%A1%20Zanario%20Gourmet!%0A%0AVisualizei%20o%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AAs!" target="_blank" target="_blank"> (11) 98847-7515</a>
                 </div>
-            </div>
-            <div class="flex flex-col text-center items-center gap-4">
-                <h2 class="font-bold text-3xl text-white"> <i
-                        class="fa-solid fa-hashtag text-4xl md:text-2xl"></i> Redes sociais</h2>
-                <div class="redes-sociais flex flex-row gap-4">
-                    <a href="https://www.instagram.com/zanario_gourmet_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank">
-                        <i
-                            class="fa-brands fa-instagram text-white text-3xl md:text-2xl rounded-full px-3 py-2"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send/?phone=5511988477515&text=Ol%C3%A1%20Zanario%20Gourmet,%20adorei%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido,%20poderia%20me%20enviar%20o%20card%C3%A1pio,%20por%20gentileza?" target="_blank" onclick="gtag('event', 'click_whatsapp', {'event_category': 'engajamento', 'event_label': 'contato'});">
-                        <i
-                            class="fa-brands fa-whatsapp text-white text-3xl md:text-2xl rounded-full px-3 py-2"></i>
-                    </a>
+                <div class="footer-info">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/zanario_gourmet_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank"> @zanario_gourmet_</a>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <span>© 2026 Zanario Gourmet • Todos os direitos reservados.</span>
+            <span>Desenvolvido por <strong><a href="https://www.instagram.com/kaua.dev/" target="_blank">Kauã Henrique</a></strong> </span>
+        </div>
     </footer>
-    <footer class="fundo w-full h-full flex flex-col gap-1 justify-center items-center py-3">
-        <span class="text-xl md:text-lg font-della-respira">&copy; Todos os direitos reservados </span>
 
     <div class="lightbox" id="lightbox">
         <span class="close">&times;</span>

@@ -273,7 +273,7 @@ li.link-hover:hover a{
 
 .section-title p{
     color: #98C5A5;
-    margin-bottom: .8rem;
+    margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
@@ -631,14 +631,11 @@ h1.text-produtos{
 .menu-cta a{
     background: #CD8195;
     color: #FBF7EE;
-
     padding: 1rem 2rem;
     border-radius: 999px;
-
     display: flex;
     align-items: center;
     gap: .7rem;
-
     transition: .3s;
 }
 
@@ -734,6 +731,7 @@ h1.text-produtos{
 
 .galeria-item{
     background-color: #FBF7EE;
+    border: 3px solid #CD8195;
     border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,.06);
@@ -771,11 +769,12 @@ h1.text-produtos{
     padding: 2rem;
 }
 
-.lightbox{
+.lightbox-img{
     max-width: 90%;
     max-height: 85%;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0,0,0,.4);
+    object-fit: contain;
 }
 
 .close{
@@ -796,332 +795,205 @@ h1.text-produtos{
     display: flex;
 }
 
-p.subtitle-produtos{
-    color: #98C5AE;
+.cta{
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    background-image: url('/assets/cta-image.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.cta-overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(251,247,238,.95) 0%, rgba(251,247,238,.88) 40%, rgba(251,247,238,.15) 100%);
+}
+
+.cta-container{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cta-badge{
+    width: fit-content;
+    padding: .6rem 1.3rem;
+    border-radius: 999px;
+    background: rgba(205,129,149,.12);
+    border: 1px solid rgba(205,129,149,.25);
+    color: #CD8195;
+    font-weight: 600;
+}
+
+.cta h2{
+    color: #CD8195;
+    font-family: 'Della Respira', 'sans-serif';
     font-weight: bold;
-    font-family: 'Montserrat', 'sans-serif';
+    font-size: 3.5rem;
+    line-height: 0.9;
+}
+
+.cta p{
+    font-size: 1.15rem;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #98C5AE;
+    max-width: 580px;
+}
+
+.cta-buttons{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.3rem;
+    margin-bottom: .9rem;
+}
+
+.btn-primary{
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+    background: transparent;
+    color: #98C5AE;
+    border: 2px solid #98C5A5;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn-primary:hover{
+    transform: translateY(-4px);
+    background-color: #98C5AE;
+    color: #FBF7EE;
+    box-shadow: 0 15px 30px rgba(152,197,174,.35);
+}
+
+.btn-secondary{
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+    border: 2px solid #CD8195;
+    color: #CD8195;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn-secondary:hover{
+    box-shadow: 8px 8px 16px -3px rgba(243, 189, 203, 0.6);
+    background: #CD8195;
+    color: #FBF7EE;
+}
+
+.footer{
+    background-color: #98C5AE;
+    color: #FBF7EE;
+    padding: 3rem 2rem;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: rgba(251,247,238,.8);
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.footer-column h3{
+    font-family: 'Della Respira', serif;
+    font-weight: 600;
+    color: #FBF7EE;
+    font-size: 2rem;
+}
+
+.footer-column a{
+    text-decoration: none;
+    color: rgba(251,247,238,.92);
+    transition: .3s;
+}
+
+.footer-column a:hover{
+    color: #CD8195;
+    font-weight: 500;
+    transform: translateX(6px);
+}
+
+.footer-info{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.footer-info i{
+    color: #CD8195;
     font-size: 1.2rem;
 }
 
-.products-list{
-    margin-top: 2rem;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+.footer-column span{
+    transition: .3s;
 }
 
-.product{
-    background-color: #FBF7EE;
-    border-radius: 1rem;
-    max-width: 200px;
-    transition: all 0.5s ease;
-}
-
-.product:hover{
-    box-shadow: 8px 8px 16px -3px rgba(227, 214, 182, 0.6);
-    transform: scale(1.05);
-}
-
-.product img{
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-    transition: all 0.5s ease;
-}
-
-.product p{
-    text-align: center;
+.footer-column span:hover{
     color: #CD8195;
-    font-weight: bold;
-    padding: 1rem;
+    transform: translateX(6px);
 }
 
-.mais-vendidos .lista-produtos{
-    background: linear-gradient(135deg, #CD8195, #E6A5B3);
+.footer-bottom{
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding-top: 30px;
+    border-top: 1px solid rgba(251,247,238,.2);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 2.5rem 5rem;
-    border-radius: 1rem;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: rgba(251,247,238,.8);
 }
 
-.lista-produtos h1.text-produtos, .lista-produtos .subtitle-produtos{
+.footer-bottom strong{
     color: #FBF7EE;
 }
 
-.produtos-mais-vendidos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
-    max-width: 1000px;
-}
-
-.produto {
-    background: #FBF7EE;
-    border-radius: 1rem;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    flex: 1 1 280px;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-.produto:hover {
-    transform: translateY(-6px);
-    box-shadow: 8px 8px 16px -3px rgba(243, 189, 203, 0.6);
-}
-
-.produto img {
-    width: 100%;
-    padding: 6px;
-    border-radius: 1rem;
-    aspect-ratio: 16 / 11;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 0.3s ease;
-}
-
-.produto span {
-    font-weight: bold;
-    font-size: 1.5rem;
-    font-family: 'Della Respira', 'sans-serif';
-    color: #CD8195;
-    padding: 0.8rem 1rem 0.2rem;
-}
-
-.produto p {
-    font-size: 0.9rem;
-    font-family: 'Montserrat', 'sans-serif';
-    color: #98C5AE;
-    padding: 0 1rem;
-}
-
-.valor {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1rem 1rem 0;
-}
-
-.valor span {
-    font-size: 1.3rem;
-    font-family: 'Della Respira', 'sans-serif';
-    font-weight: bold;
-    color: #6c4a3b;
-}
-
-.valor a {
-    background: #CD8195;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0.2rem 0.8rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-.valor a i{
-    font-size: 1.7rem;
-}
-
-.valor a:hover {
-    background: #ac586e;
-    box-shadow: 8px 8px 16px -3px rgba(205, 129, 149, 0.6);
-}
-
-/* section.about h1{
-    color: #CD8195;
-    font-family: 'Della Respira', 'sans-serif';
-}
-
-section.about h2.title{
-    color: #CD8195;
-    font-size: 32px;
-    font-weight: bold;
-    font-family: 'Della Respira', 'sans-serif';
-}
-
-section.about span.text{
-    font-family: 'Montserrat', 'sans-serif';
-    color: #98C5AE;
-}
-
-section.about-us h1{
-    color: #CD8195;
-    font-family: 'Della Respira', 'sans-serif';
-    font-weight: bold;  
-    font-size: 3.8rem;
-}
-
-section.about-us h2{
-    color: #98C5AE;
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: bold;
-    font-size: 1.3rem;
-} */
-
-/* .about-us {
-    padding: 4rem 1.5rem;
-    display: flex;
-    justify-content: center;
-} */
-
-/* .about-container {
-    max-width: 1100px;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 2rem;
-} */
-
-.informacoes {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.informacoes h2 {
-    font-size: 2rem;
-    color: #CD8195;
-    font-family: 'Della Respira', 'sans-serif';
-}
-
-.informacoes p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #6c4a3b;
-    font-family: 'Montserrat', 'sans-serif';
-}
-
-/* .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.about-image h2.text-hello{
-    font-family: 'Della Respira', 'sans-serif';
-    font-weight: bold;
-    font-size: 2rem;
-    z-index: 2;
-    color: #CD8195;
-}
-
-.about-image img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 1rem;
-    transition: transform 0.3s ease;
-}
-
-.about-image img:hover {
-    transform: scale(1.05);
-} */
-
-.cartoes{
-    display: flex;
-    gap: 4rem;
-    padding: 20px 40px;
-    max-width: 1800px;
-    margin-top: 10px;
-}
-
-.cartao{
-    padding: 40px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    border-radius: 12px;
-    transition: all 0.8s ease;
-}
-
-.cartao:hover{
+.scrollTop{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
     background-color: #CD8195;
-}
-
-.cartao:hover .number, .cartao:hover .title, .cartao:hover .text{
     color: #FBF7EE;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 99;
 }
 
-section.my-products h1{
-    color: #CD8195;
-    font-family: 'Della Respira', 'sans-serif';
-}
-
-section.my-products h2{
-    font-family: 'Montserrat', 'sans-serif';
-    color: #98C5AE;
-    margin-bottom: 1.3rem;
-    font-weight: bold;
-}
-
-section.my-products .name {
-    font-size: 32px;
-    color: #FBF7EE;
-    font-family: 'Della Respira', 'sans-serif';
-}
-
-section.my-galery h1{
-    color: #CD8195;
-    font-family: 'Della Respira', 'sans-serif';
-}
-
-section.my-galery h2{
-    font-family: 'Montserrat', 'sans-serif';
-    color: #98C5AE;
-    margin-bottom: 1.3rem;
-    font-weight: bold;
-}
-
-section.encomenda h1{
-    color: #FBF7EE;
-    font-family: 'Della Respira', 'sans-serif'; 
-}
-
-section.encomenda a{
-    transition: all 0.8s ease;
-}
-
-section.encomenda a:hover{
-    background-color: #98C5AE;
-    color: #FBF7EE;
-}
-
-footer h2{
-    color: #FBF7EE;
-    font-family: 'Della Respira', 'sans-serif'; 
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-footer .redes-sociais i{
-    background-color: #FBF7EE;
-    color: #CD8195;
-    transition: all 0.8s ease;
-}
-
-footer .redes-sociais i:hover{
-    background-color: #98C5AE;
-    color: #fff;
-}
-
-footer.fundo{
-    background-color: #FBF7EE;
-    color: #CD8195;
+.scrollTop:hover{
+    background-color: #a86f7e;
 }
 
 @media (max-width: 768px) {
