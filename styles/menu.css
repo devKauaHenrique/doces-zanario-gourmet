@@ -1,0 +1,132 @@
+.menu-section{
+    padding: 1rem 2rem;
+}
+
+.menu-grid{
+    max-width: 1200px;
+    margin: .2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.menu-card{
+    background-color: #FBF7EE;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    transition: .3s;
+}
+
+.menu-card:hover{
+    transform: translateY(-8px);
+}
+
+.menu-card img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.menu-content{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #CD8195;
+    color: #FBF7EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.menu-icon i{
+    font-size: 1.3rem;
+}
+
+.menu-content h3{
+    color: #CD8195;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Della Respira', serif;
+    margin: 0;
+}
+
+.menu-content p{
+    color: #98C5A5;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.menu-content a{
+    display: inline-flex;
+    align-items: center;
+    width: 280px;
+    gap: .5rem;
+    color: #98C5AE;
+    border: 1px solid #98C5AE;
+    border-radius: 999px;
+    padding: .5rem 2rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.menu-content a:hover{
+    gap: 1rem;
+    background-color: #98C5AE;
+    color: #FBF7EE;
+}
+
+.menu-cta{
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #FBF7EE;
+    border-radius: 24px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-cta p{
+    color: #6c4a3b;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.menu-cta a{
+    background: #CD8195;
+    color: #FBF7EE;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    transition: .3s;
+}
+
+.menu-cta a:hover{
+    transform: translateY(-3px);
+}
+
+.menu-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}

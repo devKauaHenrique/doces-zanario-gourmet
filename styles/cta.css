@@ -1,0 +1,105 @@
+.cta{
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    background-image: url('/assets/cta-image.webp');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.cta-overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(251,247,238,.95) 0%, rgba(251,247,238,.88) 40%, rgba(251,247,238,.15) 100%);
+}
+
+.cta-container{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cta-badge{
+    width: fit-content;
+    padding: .6rem 1.3rem;
+    border-radius: 999px;
+    background: rgba(205,129,149,.12);
+    border: 1px solid rgba(205,129,149,.25);
+    color: #CD8195;
+    font-weight: 600;
+}
+
+.cta h2{
+    color: #CD8195;
+    font-family: 'Della Respira', 'sans-serif';
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 0.9;
+}
+
+.cta p{
+    font-size: 1.15rem;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #98C5AE;
+    max-width: 580px;
+}
+
+.cta-buttons{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.3rem;
+    margin-bottom: .9rem;
+}
+
+.btn-primary{
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+    background: transparent;
+    color: #98C5AE;
+    border: 2px solid #98C5A5;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn-primary:hover{
+    transform: translateY(-4px);
+    background-color: #98C5AE;
+    color: #FBF7EE;
+    box-shadow: 0 15px 30px rgba(152,197,174,.35);
+}
+
+.btn-secondary{
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+    border: 2px solid #CD8195;
+    color: #CD8195;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn-secondary:hover{
+    box-shadow: 8px 8px 16px -3px rgba(243, 189, 203, 0.6);
+    background: #CD8195;
+    color: #FBF7EE;
+}

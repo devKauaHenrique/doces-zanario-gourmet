@@ -1,0 +1,94 @@
+.footer{
+    background-color: #98C5AE;
+    color: #FBF7EE;
+    padding: 3rem 2rem;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: rgba(251,247,238,.8);
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.footer-column h3{
+    font-family: 'Della Respira', serif;
+    font-weight: 600;
+    color: #FBF7EE;
+    font-size: 2rem;
+}
+
+.footer-column a{
+    text-decoration: none;
+    color: rgba(251,247,238,.92);
+    transition: .3s;
+}
+
+.footer-column a:hover{
+    color: #CD8195;
+    font-weight: 500;
+    transform: translateX(6px);
+}
+
+.footer-info{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.footer-info i{
+    color: #CD8195;
+    font-size: 1.2rem;
+}
+
+.footer-column span{
+    transition: .3s;
+}
+
+.footer-column span:hover{
+    color: #CD8195;
+    transform: translateX(6px);
+}
+
+.footer-bottom{
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding-top: 30px;
+    border-top: 1px solid rgba(251,247,238,.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: rgba(251,247,238,.8);
+}
+
+.footer-bottom strong{
+    color: #FBF7EE;
+}
+
+.scrollTop{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #CD8195;
+    color: #FBF7EE;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 99;
+}
+
+.scrollTop:hover{
+    background-color: #a86f7e;
+}

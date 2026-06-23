@@ -1,0 +1,448 @@
+.hero{
+    background-color: #98C5AE;
+    font-family: 'Della Respira', 'sans-serif';
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: #FBF7EE;
+    width: 100%;
+}
+
+.hero nav{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-menu ul li:last-child a{
+    background-color: #CD8195;
+    color: #FBF7EE;
+    padding: 1rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.nav-menu ul li:last-child a:hover{
+    background-color: #FBF7EE;
+    color: #CD8195;
+    box-shadow: 8px 8px 16px -3px rgba(243, 189, 203, 0.6);
+}
+
+li.link-hover{
+    position: relative;
+}
+
+li.link-hover::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #CD8195;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.6s;
+}
+
+li.link-hover:hover::before{
+    scale: 1;
+}
+
+li.link-hover:hover a{
+    color: #CD8195;
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #FBF7EE;
+    cursor: pointer;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.index {
+    height: calc(100vh - 95px);
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    background: url("/assets/index.webp") center/cover no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.left-content {
+    max-width: 1200px;
+}
+
+.left-content h1{
+    color: #CD8195;
+    font-family: 'Della Respira', 'sans-serif';
+    font-weight: bold;
+    font-size: 3.5rem;
+    max-width: 660px;
+    line-height: 0.9;
+}
+
+.left-content p.subtitle{
+    color: #98C5AE;
+    font-weight: bold;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1.5rem;
+    max-width: 500px;
+    line-height: 1.3;
+    margin-top: 1rem;
+}
+
+.left-content p.description{
+    color: #98C5AE;
+    font-family: 'Montserrat', 'sans-serif';
+    text-align: left;
+    font-size: 1rem;
+    max-width: 580px;
+    line-height: 1.3;
+}
+
+.left-content .buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.left-content .buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.buttons a.btn-1, .buttons a.btn-2{
+    color: #FBF7EE;
+    background-color: #98C5AE;
+}
+
+.buttons .btn-1:hover, .buttons .btn-2:hover{
+    background: #FBF7EE;
+    color: #98C5AE;
+    transform: translateY(-4px);
+    transform: translateY(-4px);
+    box-shadow: 8px 8px 16px -3px rgba(152, 197, 174, 0.6);
+}
+
+.btn-1 i, .btn-2 i {
+    transition: .3s;
+}
+
+.btn-1:hover i, .btn-2:hover i {
+    transform: scale(1.15);
+}
+
+.subhero{
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 660px;
+    background-color: #FBF7EE;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 20;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.benefit{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    transition: .3s;
+}
+
+.benefit:hover{
+    transform: translateY(-4px);
+}
+
+.benefit i{
+    font-size: 2rem;
+    min-width: 40px;
+    color: #CD8195;
+    margin-bottom: 6px;
+}
+
+.benefit-text h3{
+    font-size: .95rem;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #CD8195;
+    margin-bottom: .3rem;
+}
+
+.benefit-text p{
+    color: #98C5AE;
+    font-size: .85rem;
+    line-height: 1.4;
+}
+
+.divider{
+    width: 1px;
+    height: 70px;
+    background: rgba(243, 189, 203, 0.6);
+}
+
+@media (max-width: 992px){
+    .index{
+        padding: 0 2rem;
+    }
+
+    .left-content{
+        max-width: 700px;
+    }
+
+    .left-content h1{
+        font-size: 2.8rem;
+    }
+
+    .subhero{
+        max-width: 100%;
+        gap: .8rem;
+        padding: 1rem;
+    }
+
+    .benefit-text h3{
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 768px){
+    .nav-menu{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .menu-mobile{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: #98C5AE;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+        font-size:1.2rem;
+        font-family: 'Della Respira', 'sans-serif';
+        font-weight:600;
+        transition: .4s;
+        z-index: 9999;
+    }
+
+    .menu-mobile a{
+        color: #FBF7EE;
+        transition: .3s;
+    }
+
+    .menu-mobile a:hover{
+        color: #CD8195;
+        transform: translateX(6px);
+    }
+
+    .menu-mobile.active{
+        right: 0;
+    }
+
+    .overlay{
+        position: fixed;
+        inset: 0;
+        background:rgba(0,0,0,.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: .4s;
+        z-index: 9998;
+    }
+
+    .overlay.active{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .close{
+        align-self: flex-end;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #CD8195;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    .hero nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .index{
+        background-image: none;
+        background-color: #FBF7EE;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem 1.25rem 0;
+        min-height: calc(100svh - 95px);
+        height: auto;
+        position: relative;
+    }
+
+    .index::before {
+        display: none;
+    }
+
+    .left-content{
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .left-content h1{
+        font-size: 2rem;
+        padding: 0 1.5rem;
+        line-height: 1.1;
+        max-width: 100%;
+        text-shadow: none;
+        color: #CD8195;
+    }
+
+    .left-content p.description{
+        text-align: center;
+        padding: 0 1.5rem;
+        max-width: 100%;
+        font-size: 0.95rem;
+        text-shadow: none;
+        color: #98C5AE;
+    }
+
+    .buttons{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+
+    .buttons a{
+        width: 100%;
+        justify-content: center;
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .subhero{
+        width: 90%;
+        margin: 1.5rem auto 0;
+        border-radius: 20px; 
+        flex-direction: column;
+        gap: 0;
+        padding: 1.25rem 1.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        background-color: #fff;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .divider{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: rgba(205, 129, 149, 0.2);
+    }
+
+    .benefit{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.65rem 0;
+    }
+
+    .benefit-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.85rem;
+        width: 100%;
+    }
+
+    .benefit-text i {
+        font-size: 1.4rem;
+        min-width: 28px;
+        color: #CD8195;
+        margin-bottom: 0;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .benefit-text h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.15rem;
+        line-height: 1.2;
+    }
+
+    .benefit-text p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin: 0;
+    }
+}
