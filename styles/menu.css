@@ -130,3 +130,101 @@
     gap: 1rem;
     margin-bottom: 1rem;
 }
+
+@media (max-width: 992px){
+    .menu-section{
+        padding: 3rem 2rem;
+    }
+
+    .menu-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .menu-card img{
+        height: 220px;
+    }
+
+    .menu-content h3{
+        font-size: 1.6rem;
+    }
+
+    .menu-content a{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu-cta{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .menu-section{
+        padding: 3rem 1.25rem;
+    }
+
+    .menu-grid{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .menu-card{
+        border-radius: 20px;
+    }
+
+    .menu-card img{
+        height: 230px;
+    }
+
+    .menu-content{
+        padding: 1.25rem;
+    }
+
+    .menu-header{
+        gap: .8rem;
+    }
+
+    .menu-icon{
+        width: 42px;
+        height: 42px;
+    }
+
+    .menu-icon i{
+        font-size: 1.1rem;
+    }
+
+    .menu-content h3{
+        font-size: 1.35rem;
+    }
+
+    .menu-content p{
+        font-size: .95rem;
+        line-height: 1.5;
+    }
+
+    .menu-content a{
+        width: 100%;
+        justify-content: center;
+        padding: .85rem 1rem;
+    }
+
+    .menu-cta{
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .menu-cta p{
+        font-size: .95rem;
+    }
+
+    .menu-cta a{
+        width: 100%;
+        justify-content: center;
+    }
+}

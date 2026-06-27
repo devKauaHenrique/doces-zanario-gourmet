@@ -5,7 +5,7 @@
 
 .avaliacoes-grid{
     max-width: 1200px;
-    margin: 2.5rem auto;
+    margin: 1.2rem auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -13,53 +13,85 @@
 
 .avaliacao-card{
     background-color: #FBF7EE;
-    padding: 2rem;
     border-radius: 24px;
+    overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,.06);
-    transition: .3s;
+    transition: .35s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .avaliacao-card:hover{
     transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
 }
 
-.stars{
-    display: flex;
-    gap: .4rem;
-    color: #CD8195;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+.avaliacao-card img{
+    width: 100%;
+    height: 420px;
+    border-radius: 24px;
+    object-fit: contain;
+    padding: .75rem;
+    transition: transform .35s ease;
 }
 
-.avaliacao-text{
-    color: #6c4a3b;
-    line-height: 1.8;
-    margin-bottom: 2rem;
+.avaliacao-card:hover img{
+    transform: scale(1.02);
 }
 
-.client{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.client img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.client h4{
-    color: #CD8195;
+.avaliacao-card h3{
+    text-align: center;
+    padding: 1rem;
+    color: #cd8195;
     font-family: 'Della Respira', serif;
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: .2rem;
 }
 
-.client span{
-    color: #98C5AE;
-    font-family: 'Della Respira', serif;
-    font-weight: 500;
-    font-size: .9rem;
+@media (max-width: 992px){
+    .avaliacoes{
+        padding: 5rem 2rem;
+    }
+
+    .avaliacoes-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .avaliacao-card img{
+        height: 420px;
+    }
+
+    .avaliacao-card h3{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .avaliacoes{
+        padding: 3rem 1.25rem;
+    }
+
+    .avaliacoes-grid{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .avaliacao-card{
+        border-radius: 20px;
+    }
+
+    .avaliacao-card img{
+        height: auto;
+        max-height: 520px;
+        object-fit: contain;
+        padding: .75rem;
+    }
+
+    .avaliacao-card h3{
+        font-size: 1.5rem;
+        padding: .9rem;
+    }
 }

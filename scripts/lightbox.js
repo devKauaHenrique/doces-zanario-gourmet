@@ -1,22 +1,32 @@
-const imagens = document.querySelectorAll('.galeria-img');
+const imagens = document.querySelectorAll('.lightbox-trigger');
 
 const lightbox = document.querySelector('.lightbox');
 const lightboxImg = document.querySelector('.lightbox-img');
-const closeBtn = document.querySelector('.close');
+const closeBtn = document.querySelector('.lightbox-close');
 
-imagens.forEach(img => {
-    img.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightboxImg.src = img.src;
+function abrirLightbox(src){
+    lightbox.classList.add("active");
+    lightboxImg.src = src;
+}
+
+function fecharLightbox(){
+    lightbox.classList.remove("active");
+}
+
+imagens.forEach((img) => {
+
+    img.addEventListener("click", () => {
+        abrirLightbox(img.src);
     });
+
 });
 
-closeBtn.addEventListener('click', () =>{
-    lightbox.classList.remove('active');
-});
+closeBtn.addEventListener("click", fecharLightbox);
 
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox){
-        lightbox.classList.remove('active');
+lightbox.addEventListener("click", (e) => {
+
+    if(e.target === lightbox){
+        fecharLightbox();
     }
+
 });
