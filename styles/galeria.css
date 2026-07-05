@@ -36,3 +36,39 @@
 .galeria-img:hover{
     transform: scale(1.05);
 }
+
+@media (max-width: 992px){
+    .galeria{
+        padding: 1rem 2rem 4rem;
+    }
+
+    .galeria-grid{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .galeria-img{
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px){
+    .galeria{
+        padding: 3rem 1.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .galeria-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: .9rem;
+    }
+
+    .galeria-item{
+        border-radius: 18px;
+        border-width: 2px;
+    }
+
+    .galeria-img{
+        height: 170px;
+    }
+}

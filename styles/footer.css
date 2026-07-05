@@ -92,3 +92,69 @@
 .scrollTop:hover{
     background-color: #a86f7e;
 }
+
+@media (max-width: 768px){
+    .footer{
+        padding: 3rem 1.25rem 2rem;
+    }
+
+    .footer-container{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .footer-column{
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-column h3{
+        font-size: 1.7rem;
+        margin-bottom: .3rem;
+    }
+
+    .footer-column a{
+        font-size: 1.3rem;
+    }
+
+    .footer-column a:hover{
+        transform: none;
+    }
+
+    .footer-info{
+        justify-content: center;
+        gap: .7rem;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer-info i{
+        font-size: 1rem;
+    }
+
+    .footer-column span:hover{
+        transform: none;
+    }
+
+    .footer-bottom{
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: .7rem;
+    }
+
+    .footer span{
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .scrollTop{
+        right: 20px;
+        bottom: 20px;
+        padding: .8rem .95rem;
+        border-radius: 12px;
+    }
+}

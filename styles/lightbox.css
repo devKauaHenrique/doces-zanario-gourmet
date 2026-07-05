@@ -7,6 +7,7 @@
     justify-content: center;
     z-index: 9999;
     padding: 2rem;
+    cursor: zoom-out;
 }
 
 .lightbox.active{
@@ -19,16 +20,19 @@
     border-radius: 16px;
     object-fit: contain;
     box-shadow: 0 15px 50px rgba(0,0,0,.4);
+    cursor: default;
+    animation: zoomIn .25s ease;
 }
 
 .lightbox-close{
     position: absolute;
     top: 25px;
     right: 35px;
-    color: #FFF;
+    color: #FBF7EE;
     font-size: 3rem;
     cursor: pointer;
     transition: .3s;
+    z-index: 1000;
 }
 
 .lightbox-close:hover{
@@ -36,10 +40,26 @@
     transform: scale(1.15);
 }
 
+@keyframes zoomIn{
+    from{
+        opacity: 0;
+        transform: scale(.9);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 @media (max-width: 768px){
+    .lightbox{
+        padding: 1rem;
+    }
+
     .lightbox-img{
         max-width: 95%;
         max-height: 85%;
+        border-radius: 12px;
     }
 
     .lightbox-close{
