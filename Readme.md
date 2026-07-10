@@ -162,19 +162,12 @@ Princípios utilizados:
 
 ## 👨‍💻 Autor
 
-**Kauã Henrique**
+Kauã Henrique
 
-🌐 **Portfólio**
-
-https://dev-kaua.vercel.app
-
-💼 **LinkedIn**
-
-https://www.linkedin.com/in/kauã-henrique-78259a259/
-
-💻 **GitHub**
-
-https://github.com/devKauaHenrique
+[![Gmail](https://skillicons.dev/icons?i=gmail)](https://mail.google.com/mail/u/0/#inbox?compose=lqrsljczllLxWwnlcsDtmsfWBJrMQPkZCMxHtGXvrkLjPBMqjgPvZffcpbzzHlmMlxthlcQtHdRlZSczp)
+[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/kau%C3%A3-henrique-78259a259/)
+[![Portfólio](https://skillicons.dev/icons?i=htmx)](https://dev-kaua.vercel.app/)
+[![Instagram](https://skillicons.dev/icons?i=instagram)](https://www.instagram.com/kaua.dev/)
 
 ---
 
