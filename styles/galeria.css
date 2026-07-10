@@ -61,6 +61,7 @@
     .galeria-grid{
         grid-template-columns: repeat(2, 1fr);
         gap: .9rem;
+        margin-top: 0.8rem;
     }
 
     .galeria-item{
